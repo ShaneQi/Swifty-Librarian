@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "A9F18E68B09CC87F54A7B6BE0DF87F9CB8C06258",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "A9F18E68B09CC87F54A7B6BE0DF87F9CB8C06258" : 0,
+    "E2306DAE0C98D148736A05084B6FAB44F03B4909" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "C4F3AB0E-40B0-44B1-BBE1-B2AEB1F8E324",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "A9F18E68B09CC87F54A7B6BE0DF87F9CB8C06258" : "Swifty-Librarian\/",
+    "E2306DAE0C98D148736A05084B6FAB44F03B4909" : "Swifty-Librarian\/Perfect\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Swifty-Librarian",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Swifty-Librarian.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/ShaneQi\/Swifty-Librarian.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "A9F18E68B09CC87F54A7B6BE0DF87F9CB8C06258"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/PerfectlySoft\/Perfect.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "E2306DAE0C98D148736A05084B6FAB44F03B4909"
+    }
+  ]
+}

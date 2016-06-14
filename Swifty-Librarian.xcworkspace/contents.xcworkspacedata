@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:Perfect/PerfectLib/PerfectLib.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Perfect/Connectors/MySQL/MySQL.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:Swifty-Librarian-Normalization/Swifty-Librarian-Normalization.xcodeproj">
    </FileRef>
 </Workspace>

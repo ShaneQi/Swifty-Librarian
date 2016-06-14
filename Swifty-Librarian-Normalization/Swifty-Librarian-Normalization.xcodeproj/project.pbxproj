@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF3DE8571D0E097E00245E6B /* PerfectLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF3DE8561D0E097E00245E6B /* PerfectLib.framework */; };
+		BF3DE8591D0E098100245E6B /* MySQL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF3DE8581D0E098100245E6B /* MySQL.framework */; };
 		BFF4F7E01D0D0E3900D54C8A /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF4F7DF1D0D0E3900D54C8A /* main.swift */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +25,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		BF3DE8561D0E097E00245E6B /* PerfectLib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PerfectLib.framework; path = "../../../../Library/Developer/Xcode/DerivedData/Swifty-Librarian-gzqewftotnlqtudquqeurxllaquk/Build/Products/Debug/PerfectLib.framework"; sourceTree = "<group>"; };
+		BF3DE8581D0E098100245E6B /* MySQL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MySQL.framework; path = "../../../../Library/Developer/Xcode/DerivedData/Swifty-Librarian-gzqewftotnlqtudquqeurxllaquk/Build/Products/Debug/MySQL.framework"; sourceTree = "<group>"; };
 		BFF4F7DC1D0D0E3900D54C8A /* Swifty-Librarian-Normalization */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Swifty-Librarian-Normalization"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFF4F7DF1D0D0E3900D54C8A /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -32,6 +36,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF3DE8571D0E097E00245E6B /* PerfectLib.framework in Frameworks */,
+				BF3DE8591D0E098100245E6B /* MySQL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,6 +47,8 @@
 		BFF4F7D31D0D0E3900D54C8A = {
 			isa = PBXGroup;
 			children = (
+				BF3DE8581D0E098100245E6B /* MySQL.framework */,
+				BF3DE8561D0E097E00245E6B /* PerfectLib.framework */,
 				BFF4F7DE1D0D0E3900D54C8A /* Swifty-Librarian-Normalization */,
 				BFF4F7DD1D0D0E3900D54C8A /* Products */,
 			);
@@ -241,6 +249,7 @@
 				BFF4F7E51D0D0E3900D54C8A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
