@@ -5,12 +5,15 @@
       location = "group:Swifty Librarian/Swifty Librarian.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:Swifty-Librarian-Normalization/Swifty-Librarian-Normalization.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:RxSwift/Rx.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:Perfect/PerfectLib/PerfectLib.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Perfect/Connectors/MySQL/MySQL.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:Swifty-Librarian-Normalization/Swifty-Librarian-Normalization.xcodeproj">
    </FileRef>
 </Workspace>
