@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:Swifty Librarian/Swifty Librarian.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:Perfect/PerfectLib/PerfectLib.xcodeproj">
    </FileRef>
    <FileRef
