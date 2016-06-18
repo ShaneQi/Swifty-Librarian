@@ -10,5 +10,9 @@ func quote(content: String?) -> String {
 	guard content != nil else {
 		return "NULL"
 	}
-	return "\"\(content)\""
+	
+	let escapeSingleQuote = content!.stringByReplacingString("'", withString: "\\'")
+	let deleteDoubleQuote = escapeSingleQuote.stringByReplacingString("\"", withString: "")
+	
+	return "'\(deleteDoubleQuote)'"
 }
