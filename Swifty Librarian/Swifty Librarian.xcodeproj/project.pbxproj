@@ -12,7 +12,6 @@
 		BF6A41A11D165311007CA1E4 /* Branch.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6A41A01D165311007CA1E4 /* Branch.swift */; };
 		BF6A41A31D165462007CA1E4 /* BranchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6A41A21D165462007CA1E4 /* BranchViewController.swift */; };
 		BF6A41A61D16688B007CA1E4 /* ColorSchema.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6A41A51D16688B007CA1E4 /* ColorSchema.swift */; };
-		BF6A41AE1D166B62007CA1E4 /* MasterNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6A41AD1D166B62007CA1E4 /* MasterNavigationController.swift */; };
 		BFCD93AF1D150C370044E496 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCD93AE1D150C370044E496 /* AppDelegate.swift */; };
 		BFCD93B11D150C370044E496 /* IndexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCD93B01D150C370044E496 /* IndexViewController.swift */; };
 		BFCD93B41D150C370044E496 /* IndexView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFCD93B21D150C370044E496 /* IndexView.storyboard */; };
@@ -52,7 +51,6 @@
 		BF6A41A01D165311007CA1E4 /* Branch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Branch.swift; sourceTree = "<group>"; };
 		BF6A41A21D165462007CA1E4 /* BranchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BranchViewController.swift; sourceTree = "<group>"; };
 		BF6A41A51D16688B007CA1E4 /* ColorSchema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorSchema.swift; sourceTree = "<group>"; };
-		BF6A41AD1D166B62007CA1E4 /* MasterNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterNavigationController.swift; sourceTree = "<group>"; };
 		BFCD93AB1D150C370044E496 /* Swifty Librarian.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swifty Librarian.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFCD93AE1D150C370044E496 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BFCD93B01D150C370044E496 /* IndexViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexViewController.swift; sourceTree = "<group>"; };
@@ -130,7 +128,6 @@
 			isa = PBXGroup;
 			children = (
 				BFD008AB1D1519B7008537CF /* MasterViewController.swift */,
-				BF6A41AD1D166B62007CA1E4 /* MasterNavigationController.swift */,
 			);
 			name = MasterViewContoller;
 			sourceTree = "<group>";
@@ -386,7 +383,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF6A41AE1D166B62007CA1E4 /* MasterNavigationController.swift in Sources */,
 				BFD0C74A1D2076980031339E /* SearchCell.swift in Sources */,
 				BFD008B01D1519CC008537CF /* SearchViewController.swift in Sources */,
 				BF6A41A61D16688B007CA1E4 /* ColorSchema.swift in Sources */,

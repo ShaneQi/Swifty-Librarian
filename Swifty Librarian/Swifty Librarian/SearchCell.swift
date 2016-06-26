@@ -11,7 +11,7 @@ import UIKit
 class SearchCell: UICollectionViewCell {
 	
 	override func awakeFromNib() {
-		
+
 	}
 	
 	func checkAvailability() {

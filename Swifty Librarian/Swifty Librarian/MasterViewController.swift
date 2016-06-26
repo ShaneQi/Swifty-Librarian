@@ -15,6 +15,7 @@ class MasterViewController: UIViewController {
 	let menu = [
 		[
 			"Books",
+			"Checking In/Out",
 			"Borrowers"
 			],
 		[

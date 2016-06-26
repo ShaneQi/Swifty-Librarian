@@ -4,10 +4,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--Master Navigation Controller-->
+        <!--Navigation Controller-->
         <scene sceneID="ipl-uQ-En4">
             <objects>
-                <navigationController id="HXp-M4-BSe" customClass="MasterNavigationController" customModule="Swifty_Librarian" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController id="HXp-M4-BSe" sceneMemberID="viewController">
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad-1/3"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="7gi-vW-9JV">
