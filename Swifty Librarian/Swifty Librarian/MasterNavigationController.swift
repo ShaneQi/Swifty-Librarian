@@ -10,9 +10,7 @@ import UIKit
 
 class MasterNavigationController: UINavigationController {
 
-	override func viewDidLoad() {
-
-		
+	override func viewDidLoad() {		
 //		print(self.navigationItem.titleView)
 //		self.navigationItem.titleView = xx
 	}

@@ -22,8 +22,9 @@ class IndexViewController: UIViewController {
 			
 			pageViewControler = (segue.destinationViewController as! UIPageViewController)
 			pageViewControler.dataSource = self
-			for branch in viewModel.branches {
+			for (index, branch) in viewModel.branches.enumerate() {
 				branchViewControllers.append(BranchViewController(branch: branch))
+				branchViewControllers.last?.view.backgroundColor = viewModel.colors[index]
 			}
 			pageViewControler.setViewControllers([branchViewControllers[0]], direction: .Forward, animated: true, completion: nil)
 			

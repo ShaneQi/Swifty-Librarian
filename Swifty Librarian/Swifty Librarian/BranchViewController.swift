@@ -11,6 +11,7 @@ import UIKit
 class BranchViewController: UIViewController {
 	
 	@IBOutlet var nameLabel: UILabel!
+	@IBOutlet var addressLabel: UILabel!
 	
 	var branch: Branch!
 	
@@ -25,6 +26,7 @@ class BranchViewController: UIViewController {
 	override func viewDidLoad() {
 		
 		self.nameLabel.text = branch.name
+		self.addressLabel.text = branch.address
 		
 	}
 	

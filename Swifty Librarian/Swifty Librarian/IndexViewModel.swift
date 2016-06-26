@@ -11,6 +11,7 @@ class IndexViewModel {
 	static let instance = IndexViewModel()
 	
 	var branches = [Branch]()
+	let colors = [redPrimary, greenPrimary, orangePrimary, indigoPrimary]
 	
 	init() {
 	

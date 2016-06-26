@@ -197,8 +197,8 @@
 		BFD008A21D15173A008537CF /* View */ = {
 			isa = PBXGroup;
 			children = (
-				BF6A41A71D1669BC007CA1E4 /* MasterView */,
 				BF6A419B1D15D201007CA1E4 /* IndexView */,
+				BF6A41A71D1669BC007CA1E4 /* MasterView */,
 				BFD008A81D15198D008537CF /* SearchView.storyboard */,
 			);
 			name = View;
