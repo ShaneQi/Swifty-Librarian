@@ -10,10 +10,51 @@ import UIKit
 
 class MasterViewController: UIViewController {
 
+	@IBOutlet var tableView: UITableView!
+	
+	let menu = [
+		[
+			"Searching",
+			"Checking In/Out",
+			"Borrowers"
+			],
+		[
+			"Back"
+		]
+	]
+	
 	override func viewDidLoad() {
-		let xx = UILabel(frame: CGRect(x: 0, y: 0, width: 20, height: 20))
-		xx.text = "title"
-		self.navigationItem.titleView = xx
+//		self.navigationItem.titleView = xxx
+		
+		tableView.dataSource = self
+		tableView.delegate = self
+		
+	}
+	
+}
+
+extension MasterViewController: UITableViewDataSource {
+
+	func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+		return menu.count
+	}
+	
+	func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+		return menu[section].count
+	}
+	
+	func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+		let cell = tableView.dequeueReusableCellWithIdentifier("MasterCell")!
+		cell.textLabel?.text = menu[indexPath.section][indexPath.row]
+		return cell
+	}
+	
+}
+
+extension MasterViewController: UITableViewDelegate {
+	
+	func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+		tableView.cellForRowAtIndexPath(indexPath)?.selected = false
 	}
 	
 }
