@@ -2,13 +2,35 @@
 //  BranchViewController.swift
 //  Swifty Librarian
 //
-//  Created by Shane Qi on 6/17/16.
+//  Created by Shane Qi on 6/18/16.
 //  Copyright © 2016 com.github.shaneqi. All rights reserved.
 //
 
 import UIKit
 
 class BranchViewController: UIViewController {
+	
+	@IBOutlet var nameLabel: UILabel!
+	
+	var branch: Branch!
+	
+	init(branch: Branch) {
+		super.init(nibName: "BranchView", bundle: nil)
+		
+		self.branch = branch
+		
+	}
+
+	
+	override func viewDidLoad() {
+		
+		self.nameLabel.text = branch.name
+		
+	}
+	
+	
+	required init?(coder aDecoder: NSCoder) {
+		fatalError("init(coder:) has not been implemented")
+	}
 
 }
-

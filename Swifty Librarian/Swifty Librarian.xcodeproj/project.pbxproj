@@ -7,9 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF6A419D1D15D212007CA1E4 /* BranchView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF6A419C1D15D212007CA1E4 /* BranchView.xib */; };
+		BF6A419F1D1650FC007CA1E4 /* IndexViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6A419E1D1650FC007CA1E4 /* IndexViewModel.swift */; };
+		BF6A41A11D165311007CA1E4 /* Branch.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6A41A01D165311007CA1E4 /* Branch.swift */; };
+		BF6A41A31D165462007CA1E4 /* BranchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6A41A21D165462007CA1E4 /* BranchViewController.swift */; };
+		BF6A41A61D16688B007CA1E4 /* ColorSchema.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6A41A51D16688B007CA1E4 /* ColorSchema.swift */; };
+		BF6A41AE1D166B62007CA1E4 /* MasterNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6A41AD1D166B62007CA1E4 /* MasterNavigationController.swift */; };
 		BFCD93AF1D150C370044E496 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCD93AE1D150C370044E496 /* AppDelegate.swift */; };
-		BFCD93B11D150C370044E496 /* BranchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCD93B01D150C370044E496 /* BranchViewController.swift */; };
-		BFCD93B41D150C370044E496 /* BranchView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFCD93B21D150C370044E496 /* BranchView.storyboard */; };
+		BFCD93B11D150C370044E496 /* IndexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCD93B01D150C370044E496 /* IndexViewController.swift */; };
+		BFCD93B41D150C370044E496 /* IndexView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFCD93B21D150C370044E496 /* IndexView.storyboard */; };
 		BFCD93B71D150C370044E496 /* Swifty_Librarian.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BFCD93B51D150C370044E496 /* Swifty_Librarian.xcdatamodeld */; };
 		BFCD93B91D150C370044E496 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFCD93B81D150C370044E496 /* Assets.xcassets */; };
 		BFCD93BC1D150C370044E496 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFCD93BA1D150C370044E496 /* LaunchScreen.storyboard */; };
@@ -39,10 +45,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BF6A419C1D15D212007CA1E4 /* BranchView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BranchView.xib; sourceTree = "<group>"; };
+		BF6A419E1D1650FC007CA1E4 /* IndexViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndexViewModel.swift; sourceTree = "<group>"; };
+		BF6A41A01D165311007CA1E4 /* Branch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Branch.swift; sourceTree = "<group>"; };
+		BF6A41A21D165462007CA1E4 /* BranchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BranchViewController.swift; sourceTree = "<group>"; };
+		BF6A41A51D16688B007CA1E4 /* ColorSchema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorSchema.swift; sourceTree = "<group>"; };
+		BF6A41AD1D166B62007CA1E4 /* MasterNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterNavigationController.swift; sourceTree = "<group>"; };
 		BFCD93AB1D150C370044E496 /* Swifty Librarian.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swifty Librarian.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFCD93AE1D150C370044E496 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BFCD93B01D150C370044E496 /* BranchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BranchViewController.swift; sourceTree = "<group>"; };
-		BFCD93B31D150C370044E496 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/BranchView.storyboard; sourceTree = "<group>"; };
+		BFCD93B01D150C370044E496 /* IndexViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexViewController.swift; sourceTree = "<group>"; };
+		BFCD93B31D150C370044E496 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/IndexView.storyboard; sourceTree = "<group>"; };
 		BFCD93B61D150C370044E496 /* Swifty_Librarian.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Swifty_Librarian.xcdatamodel; sourceTree = "<group>"; };
 		BFCD93B81D150C370044E496 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BFCD93BB1D150C370044E496 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -84,6 +96,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BF6A419B1D15D201007CA1E4 /* IndexView */ = {
+			isa = PBXGroup;
+			children = (
+				BFCD93B21D150C370044E496 /* IndexView.storyboard */,
+				BF6A419C1D15D212007CA1E4 /* BranchView.xib */,
+			);
+			name = IndexView;
+			sourceTree = "<group>";
+		};
+		BF6A41A41D16546A007CA1E4 /* IndexViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BFCD93B01D150C370044E496 /* IndexViewController.swift */,
+				BF6A41A21D165462007CA1E4 /* BranchViewController.swift */,
+			);
+			name = IndexViewController;
+			sourceTree = "<group>";
+		};
+		BF6A41A71D1669BC007CA1E4 /* MasterView */ = {
+			isa = PBXGroup;
+			children = (
+				BFD008A61D151949008537CF /* MasterView.storyboard */,
+			);
+			name = MasterView;
+			sourceTree = "<group>";
+		};
+		BF6A41AA1D166B3E007CA1E4 /* MasterViewContoller */ = {
+			isa = PBXGroup;
+			children = (
+				BFD008AB1D1519B7008537CF /* MasterViewController.swift */,
+				BF6A41AD1D166B62007CA1E4 /* MasterNavigationController.swift */,
+			);
+			name = MasterViewContoller;
+			sourceTree = "<group>";
+		};
 		BFCD93A21D150C370044E496 = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +154,7 @@
 		BFCD93AD1D150C370044E496 /* Swifty Librarian */ = {
 			isa = PBXGroup;
 			children = (
+				BF6A41A51D16688B007CA1E4 /* ColorSchema.swift */,
 				BFD008A11D151729008537CF /* Support */,
 				BFD008A51D151756008537CF /* Model */,
 				BFD008A41D15174B008537CF /* ViewModel */,
@@ -149,8 +197,8 @@
 		BFD008A21D15173A008537CF /* View */ = {
 			isa = PBXGroup;
 			children = (
-				BFCD93B21D150C370044E496 /* BranchView.storyboard */,
-				BFD008A61D151949008537CF /* MasterView.storyboard */,
+				BF6A41A71D1669BC007CA1E4 /* MasterView */,
+				BF6A419B1D15D201007CA1E4 /* IndexView */,
 				BFD008A81D15198D008537CF /* SearchView.storyboard */,
 			);
 			name = View;
@@ -159,8 +207,8 @@
 		BFD008A31D151747008537CF /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				BFCD93B01D150C370044E496 /* BranchViewController.swift */,
-				BFD008AB1D1519B7008537CF /* MasterViewController.swift */,
+				BF6A41A41D16546A007CA1E4 /* IndexViewController */,
+				BF6A41AA1D166B3E007CA1E4 /* MasterViewContoller */,
 				BFD008AF1D1519CC008537CF /* SearchViewController.swift */,
 			);
 			name = ViewController;
@@ -169,6 +217,7 @@
 		BFD008A41D15174B008537CF /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				BF6A419E1D1650FC007CA1E4 /* IndexViewModel.swift */,
 			);
 			name = ViewModel;
 			sourceTree = "<group>";
@@ -176,6 +225,7 @@
 		BFD008A51D151756008537CF /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				BF6A41A01D165311007CA1E4 /* Branch.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -284,10 +334,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF6A419D1D15D212007CA1E4 /* BranchView.xib in Resources */,
 				BFCD93BC1D150C370044E496 /* LaunchScreen.storyboard in Resources */,
 				BFD008AA1D15198D008537CF /* SearchView.storyboard in Resources */,
 				BFCD93B91D150C370044E496 /* Assets.xcassets in Resources */,
-				BFCD93B41D150C370044E496 /* BranchView.storyboard in Resources */,
+				BFCD93B41D150C370044E496 /* IndexView.storyboard in Resources */,
 				BFD008A71D151949008537CF /* MasterView.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -313,11 +364,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF6A41AE1D166B62007CA1E4 /* MasterNavigationController.swift in Sources */,
 				BFD008B01D1519CC008537CF /* SearchViewController.swift in Sources */,
+				BF6A41A61D16688B007CA1E4 /* ColorSchema.swift in Sources */,
 				BFD008AC1D1519B7008537CF /* MasterViewController.swift in Sources */,
-				BFCD93B11D150C370044E496 /* BranchViewController.swift in Sources */,
+				BF6A41A31D165462007CA1E4 /* BranchViewController.swift in Sources */,
+				BF6A419F1D1650FC007CA1E4 /* IndexViewModel.swift in Sources */,
+				BFCD93B11D150C370044E496 /* IndexViewController.swift in Sources */,
 				BFCD93AF1D150C370044E496 /* AppDelegate.swift in Sources */,
 				BFCD93B71D150C370044E496 /* Swifty_Librarian.xcdatamodeld in Sources */,
+				BF6A41A11D165311007CA1E4 /* Branch.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,12 +409,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		BFCD93B21D150C370044E496 /* BranchView.storyboard */ = {
+		BFCD93B21D150C370044E496 /* IndexView.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				BFCD93B31D150C370044E496 /* Base */,
 			);
-			name = BranchView.storyboard;
+			name = IndexView.storyboard;
 			sourceTree = "<group>";
 		};
 		BFCD93BA1D150C370044E496 /* LaunchScreen.storyboard */ = {
@@ -470,6 +526,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Swifty Librarian/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.github.shaneqi.Swifty-Librarian";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -481,6 +538,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Swifty Librarian/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.github.shaneqi.Swifty-Librarian";
 				PRODUCT_NAME = "$(TARGET_NAME)";

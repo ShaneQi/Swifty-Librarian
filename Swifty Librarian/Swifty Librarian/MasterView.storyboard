@@ -1,29 +1,51 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="m5K-QB-E5E">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="HXp-M4-BSe">
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="vxr-Ag-ojz">
+        <!--Master Navigation Controller-->
+        <scene sceneID="ipl-uQ-En4">
             <objects>
-                <viewController id="m5K-QB-E5E" sceneMemberID="viewController">
+                <navigationController id="HXp-M4-BSe" customClass="MasterNavigationController" customModule="Swifty_Librarian" customModuleProvider="target" sceneMemberID="viewController">
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad-1/3"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="7gi-vW-9JV">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.93725490199999995" green="0.31764705879999999" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="barPosition">
+                                <integer key="value" value="100"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Zzl-RL-7sN" kind="relationship" relationship="rootViewController" id="pxE-Ri-9HL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q5I-Hk-4PF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-789" y="967"/>
+        </scene>
+        <!--xzccxz-->
+        <scene sceneID="Jut-cS-WGw">
+            <objects>
+                <viewController id="Zzl-RL-7sN" customClass="MasterViewController" customModule="Swifty_Librarian" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Qad-XL-wNy"/>
-                        <viewControllerLayoutGuide type="bottom" id="fsv-es-iQ5"/>
+                        <viewControllerLayoutGuide type="top" id="FbO-70-hRa"/>
+                        <viewControllerLayoutGuide type="bottom" id="TYu-qq-9PD"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="oOV-0b-Cuk">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <view key="view" contentMode="scaleToFill" id="S0J-FF-Txf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
-                    <splitViewMasterSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <navigationItem key="navigationItem" title="xzccxz" id="9e5-Nj-TWP"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="kX7-Jh-AyL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PFR-ql-siA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-609" y="1021"/>
+            <point key="canvasLocation" x="-388" y="967"/>
         </scene>
     </scenes>
 </document>
