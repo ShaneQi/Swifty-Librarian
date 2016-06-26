@@ -6,4 +6,10 @@
 //  Copyright © 2016 com.github.shaneqi. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class SearchViewController: UIViewController, UISearchBarDelegate {
+
+	
+
+}

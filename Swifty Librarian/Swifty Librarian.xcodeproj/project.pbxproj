@@ -25,6 +25,8 @@
 		BFD008AA1D15198D008537CF /* SearchView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFD008A81D15198D008537CF /* SearchView.storyboard */; };
 		BFD008AC1D1519B7008537CF /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD008AB1D1519B7008537CF /* MasterViewController.swift */; };
 		BFD008B01D1519CC008537CF /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD008AF1D1519CC008537CF /* SearchViewController.swift */; };
+		BFD0C74A1D2076980031339E /* SearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD0C7491D2076980031339E /* SearchCell.swift */; };
+		BFD0C74C1D2077930031339E /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD0C74B1D2077930031339E /* Book.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +71,8 @@
 		BFD008A91D15198D008537CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/SearchView.storyboard; sourceTree = "<group>"; };
 		BFD008AB1D1519B7008537CF /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
 		BFD008AF1D1519CC008537CF /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		BFD0C7491D2076980031339E /* SearchCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchCell.swift; sourceTree = "<group>"; };
+		BFD0C74B1D2077930031339E /* Book.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,7 +203,7 @@
 			children = (
 				BF6A419B1D15D201007CA1E4 /* IndexView */,
 				BF6A41A71D1669BC007CA1E4 /* MasterView */,
-				BFD008A81D15198D008537CF /* SearchView.storyboard */,
+				BFD0C7471D2070350031339E /* SearchView */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -209,7 +213,7 @@
 			children = (
 				BF6A41A41D16546A007CA1E4 /* IndexViewController */,
 				BF6A41AA1D166B3E007CA1E4 /* MasterViewContoller */,
-				BFD008AF1D1519CC008537CF /* SearchViewController.swift */,
+				BFD0C7481D2070A60031339E /* SearchViewController */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -226,8 +230,26 @@
 			isa = PBXGroup;
 			children = (
 				BF6A41A01D165311007CA1E4 /* Branch.swift */,
+				BFD0C74B1D2077930031339E /* Book.swift */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		BFD0C7471D2070350031339E /* SearchView */ = {
+			isa = PBXGroup;
+			children = (
+				BFD008A81D15198D008537CF /* SearchView.storyboard */,
+				BFD0C7491D2076980031339E /* SearchCell.swift */,
+			);
+			name = SearchView;
+			sourceTree = "<group>";
+		};
+		BFD0C7481D2070A60031339E /* SearchViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BFD008AF1D1519CC008537CF /* SearchViewController.swift */,
+			);
+			name = SearchViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -365,12 +387,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF6A41AE1D166B62007CA1E4 /* MasterNavigationController.swift in Sources */,
+				BFD0C74A1D2076980031339E /* SearchCell.swift in Sources */,
 				BFD008B01D1519CC008537CF /* SearchViewController.swift in Sources */,
 				BF6A41A61D16688B007CA1E4 /* ColorSchema.swift in Sources */,
 				BFD008AC1D1519B7008537CF /* MasterViewController.swift in Sources */,
 				BF6A41A31D165462007CA1E4 /* BranchViewController.swift in Sources */,
 				BF6A419F1D1650FC007CA1E4 /* IndexViewModel.swift in Sources */,
 				BFCD93B11D150C370044E496 /* IndexViewController.swift in Sources */,
+				BFD0C74C1D2077930031339E /* Book.swift in Sources */,
 				BFCD93AF1D150C370044E496 /* AppDelegate.swift in Sources */,
 				BFCD93B71D150C370044E496 /* Swifty_Librarian.xcdatamodeld in Sources */,
 				BF6A41A11D165311007CA1E4 /* Branch.swift in Sources */,
