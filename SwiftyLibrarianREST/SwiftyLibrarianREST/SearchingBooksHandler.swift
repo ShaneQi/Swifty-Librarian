@@ -1,5 +1,5 @@
 //
-//  PerfectHandlers.swift
+//  SearchingBooksHandler.swift
 //  SwiftyLibrarianREST
 //
 //  Created by Shane Qi on 6/26/16.
@@ -27,7 +27,7 @@ class SearchingBooksHandler: RequestHandler{
 		
 		let mysql = MySQL()
 		
-		guard mysql.connect("127.0.0.1", user: "root", password: "Qq654877", db: "swifty_librarian") else {
+		guard mysql.connect("127.0.0.1", user: "root", password: databasePassword, db: "swifty_librarian") else {
 			let responseString = PerfectHelper.instance.JSONString(withFailureReason: mysql.errorMessage())
 			response.appendBodyString(responseString)
 			response.requestCompletedCallback()
