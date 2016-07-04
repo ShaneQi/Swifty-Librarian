@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		BF9683691D2B00C900B58891 /* BookAvailabilityHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9683681D2B00C900B58891 /* BookAvailabilityHandler.swift */; };
 		BF96836B1D2B025E00B58891 /* secret.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF96836A1D2B025E00B58891 /* secret.swift */; };
+		BF96836D1D2B0F3300B58891 /* LoanCheckOutHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF96836C1D2B0F3300B58891 /* LoanCheckOutHandler.swift */; };
 		BFD0C77A1D20956E0031339E /* SwiftyLibrarianREST.h in Headers */ = {isa = PBXBuildFile; fileRef = BFD0C7791D20956E0031339E /* SwiftyLibrarianREST.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BFD0C7821D20965C0031339E /* PerfectInit.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD0C7811D20965C0031339E /* PerfectInit.swift */; };
 		BFD0C7841D2096760031339E /* PerfectLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFD0C7831D2096760031339E /* PerfectLib.framework */; };
@@ -20,6 +21,7 @@
 /* Begin PBXFileReference section */
 		BF9683681D2B00C900B58891 /* BookAvailabilityHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookAvailabilityHandler.swift; sourceTree = "<group>"; };
 		BF96836A1D2B025E00B58891 /* secret.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = secret.swift; sourceTree = "<group>"; };
+		BF96836C1D2B0F3300B58891 /* LoanCheckOutHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoanCheckOutHandler.swift; sourceTree = "<group>"; };
 		BFD0C7761D20956E0031339E /* SwiftyLibrarianREST.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyLibrarianREST.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFD0C7791D20956E0031339E /* SwiftyLibrarianREST.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftyLibrarianREST.h; sourceTree = "<group>"; };
 		BFD0C77B1D20956E0031339E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 				BFD0C7811D20965C0031339E /* PerfectInit.swift */,
 				BFD0C7851D20968D0031339E /* SearchingBooksHandler.swift */,
 				BF9683681D2B00C900B58891 /* BookAvailabilityHandler.swift */,
+				BF96836C1D2B0F3300B58891 /* LoanCheckOutHandler.swift */,
 				BFD0C78A1D2098140031339E /* PerfectHelper.swift */,
 				BF96836A1D2B025E00B58891 /* secret.swift */,
 			);
@@ -165,6 +168,7 @@
 				BFD0C78B1D2098140031339E /* PerfectHelper.swift in Sources */,
 				BF96836B1D2B025E00B58891 /* secret.swift in Sources */,
 				BFD0C7861D20968D0031339E /* SearchingBooksHandler.swift in Sources */,
+				BF96836D1D2B0F3300B58891 /* LoanCheckOutHandler.swift in Sources */,
 				BFD0C7821D20965C0031339E /* PerfectInit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

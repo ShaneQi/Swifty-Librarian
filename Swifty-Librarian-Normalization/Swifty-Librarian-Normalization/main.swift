@@ -84,7 +84,7 @@ if !createBorrowerTable {
 	
 }
 
-let createBookLoansTable = mysql.query("CREATE TABLE IF NOT EXISTS book_loans (loan_id INT(10) PRIMARY KEY, book_id INT(10), card_id INT(10), date_out DATE, date_due DATE, date_in DATE);")
+let createBookLoansTable = mysql.query("CREATE TABLE IF NOT EXISTS book_loans (loan_id INT(10) PRIMARY KEY AUTO_INCREMENT, book_id INT(10), card_id varchar(255), date_out DATE, date_due DATE, date_in DATE);")
 
 if !createBookLoansTable {
 	

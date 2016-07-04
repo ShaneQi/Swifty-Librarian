@@ -23,3 +23,13 @@ class PerfectHelper {
 	}
 
 }
+
+extension NSDate {
+
+	func toString() -> String {
+		let formater = NSDateFormatter()
+		formater.dateFormat = "yyyy-MM-dd"
+		return formater.stringFromDate(self)
+	}
+
+}
