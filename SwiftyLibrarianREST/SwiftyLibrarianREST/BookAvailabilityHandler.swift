@@ -33,7 +33,29 @@ class BookAvailabilityHandler: RequestHandler {
 		
 		defer { mysql.close() }
 		
-		mysql.query(<#T##stmt: String##String#>)
+		mysql.query("SELECT * FROM book_copies B WHERE '\(paramIsbn)' = B.isbn AND B.branch_id = \(paramBranch) AND B.availability = 1;")
+		
+		var count = 0
+		var responseDictionary = [String: Any]()
+		var booksArray = [Any]()
+		
+		mysql.storeResults()?.forEachRow({ row in
+			count += 1
+		
+			var bookDictionary = [String: Any]()
+			bookDictionary["book_id"] = row[0]
+			bookDictionary["isbn"] = row[1]
+			bookDictionary["branch_id"] = row[2]
+			booksArray.append(bookDictionary)
+			
+		})
+		
+		responseDictionary["count"] = count
+		responseDictionary["books"] = booksArray
+		
+		let responseString = try! responseDictionary.jsonEncodedString()
+		response.appendBodyString(responseString)
+		response.requestCompletedCallback()
 		
 	}
 	

@@ -68,7 +68,7 @@ if !createLibraryBranchTable {
 	
 }
 
-let createBookCopiesTable = mysql.query("CREATE TABLE IF NOT EXISTS book_copies (book_id INT(10) AUTO_INCREMENT PRIMARY KEY, isbn varchar(255), branch_id INT(10));")
+let createBookCopiesTable = mysql.query("CREATE TABLE IF NOT EXISTS book_copies (book_id INT(10) AUTO_INCREMENT PRIMARY KEY, isbn varchar(255), branch_id INT(10), availability TINYINT(1) DEFAULT 1);")
 
 if !createBookCopiesTable {
 	
