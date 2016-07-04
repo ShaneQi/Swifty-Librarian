@@ -1,0 +1,25 @@
+//
+//  PerfectHelper.swift
+//  SwiftyLibrarianREST
+//
+//  Created by Shane Qi on 6/26/16.
+//  Copyright © 2016 com.github.shaneqi. All rights reserved.
+//
+
+import Foundation
+
+class PerfectHelper {
+
+	static let instance = PerfectHelper()
+	
+	func JSONString(withFailureReason reason: String) -> String {
+	
+		var JSONDictionary = [String: Any]()
+		JSONDictionary["status"] = false
+		JSONDictionary["reason"] = reason
+		let JSONString = try! JSONDictionary.jsonEncodedString()
+		return JSONString
+		
+	}
+
+}
