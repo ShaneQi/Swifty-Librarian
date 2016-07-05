@@ -16,5 +16,5 @@ public func PerfectServerModuleInit() {
 	Routing.Routes["GET", "/books/search"] = { _ in return SearchingBooksHandler.instance }
 	Routing.Routes["GET", "/books/availability"] = { _ in return BookAvailabilityHandler.instance }
 	Routing.Routes["GET", "/loan/checkout"] = { _ in return LoanCheckOutHandler.instance }
-
+	Routing.Routes["GET", "/loan/checkin"] = { _ in return LoanCheckInHandler.instance }
 }

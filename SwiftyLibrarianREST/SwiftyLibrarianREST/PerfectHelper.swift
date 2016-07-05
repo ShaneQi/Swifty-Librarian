@@ -33,3 +33,13 @@ extension NSDate {
 	}
 
 }
+
+extension String {
+
+	func toDate() -> NSDate {
+		let formater = NSDateFormatter()
+		formater.dateFormat = "yyyy-MM-dd"
+		return formater.dateFromString(self)!
+	}
+
+}

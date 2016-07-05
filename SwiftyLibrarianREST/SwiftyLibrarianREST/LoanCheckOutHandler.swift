@@ -34,7 +34,7 @@ class LoanCheckOutHandler: RequestHandler {
 		defer { mysql.close() }
 		
 		let now = NSDate()
-		let due = now.dateByAddingTimeInterval(60*60*24*15)
+		let due = now.dateByAddingTimeInterval(60*60*24*14)
 		
 		mysql.query("INSERT INTO book_loans (book_id, card_id, date_out, date_due) VALUES (\(paramBookId), '\(paramCardId)', '\(now.toString())', '\(due.toString())');")
 		mysql.query("UPDATE book_copies SET availability=0 WHERE book_id = \(paramBookId);")
