@@ -11,6 +11,8 @@ import MySQL
 
 class BorowerFineHandler: RequestHandler {
 
+	static let instance = BorowerFineHandler()
+	
 	func handleRequest(request: WebRequest, response: WebResponse) {
 		guard let paramBorrowerId = request.param("id") else {
 			let responseString = PerfectHelper.instance.JSONString(withFailureReason: "Bad parameters.")
