@@ -1,5 +1,5 @@
 //
-//  SearchingBooksHandler.swift
+//  BookSearchHandler.swift
 //  SwiftyLibrarianREST
 //
 //  Created by Shane Qi on 6/26/16.
@@ -9,9 +9,9 @@
 import PerfectLib
 import MySQL
 
-class SearchingBooksHandler: RequestHandler{
+class BookSearchHandler: RequestHandler{
 
-	static let instance = SearchingBooksHandler()
+	static let instance = BookSearchHandler()
 	
 	func handleRequest(request: WebRequest, response: WebResponse) {
 		

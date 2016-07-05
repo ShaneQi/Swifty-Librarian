@@ -11,10 +11,13 @@
 		BF96836B1D2B025E00B58891 /* secret.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF96836A1D2B025E00B58891 /* secret.swift */; };
 		BF96836D1D2B0F3300B58891 /* LoanCheckOutHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF96836C1D2B0F3300B58891 /* LoanCheckOutHandler.swift */; };
 		BF96836F1D2B3B8900B58891 /* LoanCheckInHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF96836E1D2B3B8900B58891 /* LoanCheckInHandler.swift */; };
+		BF9683711D2B6DDC00B58891 /* LoanPaymentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9683701D2B6DDC00B58891 /* LoanPaymentHandler.swift */; };
+		BF9683731D2B6FDA00B58891 /* BorrowerCreateHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9683721D2B6FDA00B58891 /* BorrowerCreateHandler.swift */; };
+		BF9683751D2B761000B58891 /* BorowerFineHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9683741D2B761000B58891 /* BorowerFineHandler.swift */; };
 		BFD0C77A1D20956E0031339E /* SwiftyLibrarianREST.h in Headers */ = {isa = PBXBuildFile; fileRef = BFD0C7791D20956E0031339E /* SwiftyLibrarianREST.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BFD0C7821D20965C0031339E /* PerfectInit.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD0C7811D20965C0031339E /* PerfectInit.swift */; };
 		BFD0C7841D2096760031339E /* PerfectLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFD0C7831D2096760031339E /* PerfectLib.framework */; };
-		BFD0C7861D20968D0031339E /* SearchingBooksHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD0C7851D20968D0031339E /* SearchingBooksHandler.swift */; };
+		BFD0C7861D20968D0031339E /* BookSearchHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD0C7851D20968D0031339E /* BookSearchHandler.swift */; };
 		BFD0C7891D2097930031339E /* MySQL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFD0C7881D2097930031339E /* MySQL.framework */; };
 		BFD0C78B1D2098140031339E /* PerfectHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD0C78A1D2098140031339E /* PerfectHelper.swift */; };
 /* End PBXBuildFile section */
@@ -24,12 +27,15 @@
 		BF96836A1D2B025E00B58891 /* secret.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = secret.swift; sourceTree = "<group>"; };
 		BF96836C1D2B0F3300B58891 /* LoanCheckOutHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoanCheckOutHandler.swift; sourceTree = "<group>"; };
 		BF96836E1D2B3B8900B58891 /* LoanCheckInHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoanCheckInHandler.swift; sourceTree = "<group>"; };
+		BF9683701D2B6DDC00B58891 /* LoanPaymentHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoanPaymentHandler.swift; sourceTree = "<group>"; };
+		BF9683721D2B6FDA00B58891 /* BorrowerCreateHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorrowerCreateHandler.swift; sourceTree = "<group>"; };
+		BF9683741D2B761000B58891 /* BorowerFineHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorowerFineHandler.swift; sourceTree = "<group>"; };
 		BFD0C7761D20956E0031339E /* SwiftyLibrarianREST.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyLibrarianREST.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFD0C7791D20956E0031339E /* SwiftyLibrarianREST.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftyLibrarianREST.h; sourceTree = "<group>"; };
 		BFD0C77B1D20956E0031339E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BFD0C7811D20965C0031339E /* PerfectInit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PerfectInit.swift; sourceTree = "<group>"; };
 		BFD0C7831D2096760031339E /* PerfectLib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PerfectLib.framework; path = "../../../../Library/Developer/Xcode/DerivedData/Swifty-Librarian-gzqewftotnlqtudquqeurxllaquk/Build/Products/Debug/PerfectLib.framework"; sourceTree = "<group>"; };
-		BFD0C7851D20968D0031339E /* SearchingBooksHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchingBooksHandler.swift; sourceTree = "<group>"; };
+		BFD0C7851D20968D0031339E /* BookSearchHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookSearchHandler.swift; sourceTree = "<group>"; };
 		BFD0C7881D2097930031339E /* MySQL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MySQL.framework; path = "../../../../Library/Developer/Xcode/DerivedData/Swifty-Librarian-gzqewftotnlqtudquqeurxllaquk/Build/Products/Debug/MySQL.framework"; sourceTree = "<group>"; };
 		BFD0C78A1D2098140031339E /* PerfectHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PerfectHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -70,10 +76,13 @@
 			children = (
 				BFD0C7871D2097680031339E /* Support */,
 				BFD0C7811D20965C0031339E /* PerfectInit.swift */,
-				BFD0C7851D20968D0031339E /* SearchingBooksHandler.swift */,
+				BFD0C7851D20968D0031339E /* BookSearchHandler.swift */,
 				BF9683681D2B00C900B58891 /* BookAvailabilityHandler.swift */,
 				BF96836C1D2B0F3300B58891 /* LoanCheckOutHandler.swift */,
 				BF96836E1D2B3B8900B58891 /* LoanCheckInHandler.swift */,
+				BF9683701D2B6DDC00B58891 /* LoanPaymentHandler.swift */,
+				BF9683721D2B6FDA00B58891 /* BorrowerCreateHandler.swift */,
+				BF9683741D2B761000B58891 /* BorowerFineHandler.swift */,
 				BFD0C78A1D2098140031339E /* PerfectHelper.swift */,
 				BF96836A1D2B025E00B58891 /* secret.swift */,
 			);
@@ -168,10 +177,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF9683691D2B00C900B58891 /* BookAvailabilityHandler.swift in Sources */,
+				BF9683731D2B6FDA00B58891 /* BorrowerCreateHandler.swift in Sources */,
+				BF9683711D2B6DDC00B58891 /* LoanPaymentHandler.swift in Sources */,
 				BFD0C78B1D2098140031339E /* PerfectHelper.swift in Sources */,
 				BF96836B1D2B025E00B58891 /* secret.swift in Sources */,
-				BFD0C7861D20968D0031339E /* SearchingBooksHandler.swift in Sources */,
+				BFD0C7861D20968D0031339E /* BookSearchHandler.swift in Sources */,
 				BF96836D1D2B0F3300B58891 /* LoanCheckOutHandler.swift in Sources */,
+				BF9683751D2B761000B58891 /* BorowerFineHandler.swift in Sources */,
 				BF96836F1D2B3B8900B58891 /* LoanCheckInHandler.swift in Sources */,
 				BFD0C7821D20965C0031339E /* PerfectInit.swift in Sources */,
 			);
