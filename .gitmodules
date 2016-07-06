@@ -4,3 +4,9 @@
 [submodule "RxSwift"]
 	path = RxSwift
 	url = https://github.com/ReactiveX/RxSwift.git
+[submodule "Alamofire"]
+	path = Alamofire
+	url = https://ShaneQi@github.com/Alamofire/Alamofire.git
+[submodule "SwiftyJSON"]
+	path = SwiftyJSON
+	url = https://@github.com/SwiftyJSON/SwiftyJSON.git

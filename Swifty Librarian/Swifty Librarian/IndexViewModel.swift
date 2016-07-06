@@ -6,6 +6,8 @@
 //  Copyright © 2016 com.github.shaneqi. All rights reserved.
 //
 
+
+
 class IndexViewModel {
 	
 	static let instance = IndexViewModel()

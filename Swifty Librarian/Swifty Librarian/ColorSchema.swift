@@ -13,3 +13,4 @@ let redPrimary = UIColor(red: 244/255, green: 67/255, blue: 54/255, alpha: 1)		/
 let indigoPrimary = UIColor(red: 63/255, green: 81/255, blue: 181/255, alpha: 1)	// 3F51B5
 let	greenPrimary = UIColor(red: 76/255, green: 175/255, blue: 80/255, alpha: 1)		// 4CAF50
 let	orangePrimary = UIColor(red: 255/255, green: 152/255, blue: 0/255, alpha: 1)	// FF9800
+let	purplePrimary = UIColor(red: 156/255, green: 39/255, blue: 176/255, alpha: 1)	// 9C27B0
