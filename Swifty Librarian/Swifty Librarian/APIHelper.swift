@@ -13,3 +13,6 @@ let branchListMETHOD = Method.GET
 
 let bookSearchURL = "http://localhost:8181/book/search"
 let bookSearchMETHOD = Method.GET
+
+let bookAvailabilityURL = "http://localhost:8181/book/availability"
+let bookAvailabilityMETHOD = Method.GET

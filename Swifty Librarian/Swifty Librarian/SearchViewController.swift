@@ -44,7 +44,10 @@ extension SearchViewController: UICollectionViewDataSource {
 		cell.isbnLabel.text = "ISBN: " + book.isbn
 		cell.authorLabel.text = "AUTHOR(s): " + book.authors
 		cell.publisherLabel.text = "PUBLISHER: " + book.publisher
+		cell.isbn = book.isbn
+		cell.checkButton.setTitle("Check Availability", forState: .Normal)
 		DLImageLoader.sharedInstance.imageFromUrl(book.coverUrl, imageView: cell.coverImageView)
+		
 		return cell
 	}
 	

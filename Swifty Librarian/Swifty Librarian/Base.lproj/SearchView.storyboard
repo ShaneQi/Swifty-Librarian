@@ -48,14 +48,14 @@
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="6O2-19-OXe">
                                                     <rect key="frame" x="168" y="8" width="458" height="202"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Title: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XUF-2b-iUg">
-                                                            <rect key="frame" x="0.0" y="0.0" width="43" height="41"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XUF-2b-iUg">
+                                                            <rect key="frame" x="0.0" y="0.0" width="38" height="40.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="ISBN:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Jt-1M-Fx0">
-                                                            <rect key="frame" x="0.0" y="41" width="43" height="41"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ISBN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Jt-1M-Fx0">
+                                                            <rect key="frame" x="0.0" y="40" width="38" height="40.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
@@ -67,14 +67,17 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Publisher:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CXo-ly-Ba0">
-                                                            <rect key="frame" x="0.0" y="121" width="76" height="41"/>
+                                                            <rect key="frame" x="0.0" y="121" width="76" height="40.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z6e-g1-gB8">
-                                                            <rect key="frame" x="0.0" y="162" width="46" height="41"/>
-                                                            <state key="normal" title="Button"/>
+                                                            <rect key="frame" x="0.0" y="161" width="120" height="40.5"/>
+                                                            <state key="normal" title="Check Availability"/>
+                                                            <connections>
+                                                                <action selector="checkAvailability:" destination="qQU-ei-vOT" eventType="touchUpInside" id="gli-Wu-o0D"/>
+                                                            </connections>
                                                         </button>
                                                     </subviews>
                                                 </stackView>
@@ -93,6 +96,7 @@
                                         </constraints>
                                         <connections>
                                             <outlet property="authorLabel" destination="fC0-sL-SBk" id="57W-z6-0Fq"/>
+                                            <outlet property="checkButton" destination="z6e-g1-gB8" id="gSD-Sm-dKH"/>
                                             <outlet property="coverImageView" destination="WQU-dJ-RYA" id="sGE-KM-iyJ"/>
                                             <outlet property="isbnLabel" destination="2Jt-1M-Fx0" id="8hL-6G-dJl"/>
                                             <outlet property="publisherLabel" destination="CXo-ly-Ba0" id="jjb-Dm-Fms"/>

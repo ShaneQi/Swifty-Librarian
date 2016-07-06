@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="s7k-mU-idr" customClass="ButtonCell" customModule="Swifty_Librarian" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="s7k-mU-idr" id="rF5-h3-LSC">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BJS-7E-2Ul">
+                        <rect key="frame" x="8" y="8" width="304" height="27.5"/>
+                        <state key="normal" title="Button"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottomMargin" secondItem="BJS-7E-2Ul" secondAttribute="bottom" id="dbD-ZK-C31"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="BJS-7E-2Ul" secondAttribute="trailing" id="qZc-PD-4Fc"/>
+                    <constraint firstItem="BJS-7E-2Ul" firstAttribute="leading" secondItem="rF5-h3-LSC" secondAttribute="leadingMargin" id="w85-E7-9N6"/>
+                    <constraint firstItem="BJS-7E-2Ul" firstAttribute="top" secondItem="rF5-h3-LSC" secondAttribute="topMargin" id="wWI-zm-TY3"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="button" destination="BJS-7E-2Ul" id="tCv-u3-6hX"/>
+            </connections>
+            <point key="canvasLocation" x="253" y="383"/>
+        </tableViewCell>
+    </objects>
+</document>

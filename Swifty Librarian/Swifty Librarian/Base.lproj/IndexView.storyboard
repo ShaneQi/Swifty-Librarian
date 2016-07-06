@@ -108,6 +108,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="o5v-LU-EvN" kind="relationship" relationship="viewControllers" id="8OL-Ge-sVa"/>
+                        <segue destination="Sg1-NR-l6s" kind="relationship" relationship="viewControllers" id="Wgn-R0-b1k"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CuY-jW-77P" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -123,6 +124,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VSa-HV-s0y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-337.5" y="523"/>
+        </scene>
+        <!--CheckView-->
+        <scene sceneID="ujo-hc-o3p">
+            <objects>
+                <viewControllerPlaceholder storyboardName="CheckView" id="Sg1-NR-l6s" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="3nv-X8-aPZ"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mLt-EN-w7R" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-684.5" y="2513"/>
         </scene>
     </scenes>
 </document>

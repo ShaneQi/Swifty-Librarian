@@ -6,4 +6,12 @@
 //  Copyright © 2016 com.github.shaneqi. All rights reserved.
 //
 
+import Foundation
+
 var selectedBranchId = 0
+
+var dateFormatter: NSDateFormatter {
+	let formatter = NSDateFormatter()
+	formatter.dateFormat = "yyyy-MM-dd"
+	return formatter
+}

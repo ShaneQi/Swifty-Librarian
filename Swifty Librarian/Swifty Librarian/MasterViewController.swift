@@ -55,6 +55,18 @@ extension MasterViewController: UITableViewDelegate {
 	
 	func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
 		tableView.cellForRowAtIndexPath(indexPath)?.selected = false
+		
+		let splitViewController = self.parentViewController?.parentViewController as! UISplitViewController
+		let tabBarController = splitViewController.viewControllers[1].childViewControllers[0] as! UITabBarController
+		
+		switch (indexPath.section, indexPath.row) {
+		case (0, 0):
+			tabBarController.selectedIndex = 0
+		case (0, 1):
+			tabBarController.selectedIndex = 1
+		default:
+			break
+		}
 	}
 	
 }

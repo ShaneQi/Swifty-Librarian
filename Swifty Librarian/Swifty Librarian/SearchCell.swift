@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Alamofire
+import SwiftyJSON
 
 class SearchCell: UICollectionViewCell {
 	
@@ -15,13 +17,39 @@ class SearchCell: UICollectionViewCell {
 	@IBOutlet var isbnLabel: UILabel!
 	@IBOutlet var authorLabel: UILabel!
 	@IBOutlet var publisherLabel: UILabel!
+	@IBOutlet var checkButton: UIButton!
 	
-	override func awakeFromNib() {
-
-	}
+	var isbn = ""
+	var copies = [Int]()
 	
-	func checkAvailability() {
-	
+	@IBAction func checkAvailability(sender: UIButton) {
+		if !(sender.titleLabel?.text?.containsString("Check"))! {
+			if !(sender.titleLabel?.text?.containsString("not"))! {
+				
+			}
+			return
+		}
+		
+		Alamofire.request(bookAvailabilityMETHOD, bookAvailabilityURL, parameters: ["isbn": isbn, "branch": selectedBranchId], encoding: .URLEncodedInURL).validate().responseJSON(completionHandler: {
+			response in
+			switch response.result {
+			case .Success:
+				if let value = response.result.value {
+					let json = JSON(value)
+					for bookCopyJSON in json["books"].arrayValue {
+						self.copies.append(bookCopyJSON["book_id"].intValue)
+					}
+					let count = self.copies.count
+					if count > 0 {
+						self.checkButton.setTitle("\(count) copies available", forState: .Normal)
+					} else {
+						self.checkButton.setTitle("not available", forState: .Normal)
+					}
+				}
+			case .Failure(let e):
+				fatalError("\(e)")
+			}
+		})
 	}
 	
 	func checkOut() {
