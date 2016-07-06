@@ -10,6 +10,12 @@ import UIKit
 
 class SearchCell: UICollectionViewCell {
 	
+	@IBOutlet var coverImageView: UIImageView!
+	@IBOutlet var titleLabel: UILabel!
+	@IBOutlet var isbnLabel: UILabel!
+	@IBOutlet var authorLabel: UILabel!
+	@IBOutlet var publisherLabel: UILabel!
+	
 	override func awakeFromNib() {
 
 	}

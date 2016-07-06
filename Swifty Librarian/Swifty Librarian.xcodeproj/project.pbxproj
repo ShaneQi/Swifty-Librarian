@@ -17,6 +17,7 @@
 		BF9D6D211D2C9C950007A3E2 /* DLILCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9D6D1E1D2C9C950007A3E2 /* DLILCacheManager.swift */; };
 		BF9D6D221D2C9C950007A3E2 /* DLImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9D6D1F1D2C9C950007A3E2 /* DLImageLoader.swift */; };
 		BF9D6D231D2C9C950007A3E2 /* DLImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9D6D201D2C9C950007A3E2 /* DLImageView.swift */; };
+		BF9D6D251D2C9D1D0007A3E2 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9D6D241D2C9D1D0007A3E2 /* SearchViewModel.swift */; };
 		BFA4C6531D2C962C0098B312 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFA4C6521D2C962C0098B312 /* Alamofire.framework */; };
 		BFA4C6541D2C962C0098B312 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BFA4C6521D2C962C0098B312 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BFA4C6571D2C96330098B312 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFA4C6561D2C96330098B312 /* SwiftyJSON.framework */; };
@@ -80,6 +81,7 @@
 		BF9D6D1E1D2C9C950007A3E2 /* DLILCacheManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DLILCacheManager.swift; path = ../../DLImageLoader/DLImageLoader/DLILCacheManager.swift; sourceTree = "<group>"; };
 		BF9D6D1F1D2C9C950007A3E2 /* DLImageLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DLImageLoader.swift; path = ../../DLImageLoader/DLImageLoader/DLImageLoader.swift; sourceTree = "<group>"; };
 		BF9D6D201D2C9C950007A3E2 /* DLImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DLImageView.swift; path = ../../DLImageLoader/DLImageLoader/DLImageView.swift; sourceTree = "<group>"; };
+		BF9D6D241D2C9D1D0007A3E2 /* SearchViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		BFA4C6521D2C962C0098B312 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = Alamofire.framework; path = "/Users/Shadow/Library/Developer/Xcode/DerivedData/Swifty-Librarian-gzqewftotnlqtudquqeurxllaquk/Build/Products/Debug-iphonesimulator/Alamofire.framework"; sourceTree = "<absolute>"; };
 		BFA4C6561D2C96330098B312 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = SwiftyJSON.framework; path = "/Users/Shadow/Library/Developer/Xcode/DerivedData/Swifty-Librarian-gzqewftotnlqtudquqeurxllaquk/Build/Products/Debug-iphonesimulator/SwiftyJSON.framework"; sourceTree = "<absolute>"; };
 		BFCD93AB1D150C370044E496 /* Swifty Librarian.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swifty Librarian.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -275,6 +277,7 @@
 			isa = PBXGroup;
 			children = (
 				BF6A419E1D1650FC007CA1E4 /* IndexViewModel.swift */,
+				BF9D6D241D2C9D1D0007A3E2 /* SearchViewModel.swift */,
 			);
 			name = ViewModel;
 			sourceTree = "<group>";
@@ -454,6 +457,7 @@
 				BF9D6D211D2C9C950007A3E2 /* DLILCacheManager.swift in Sources */,
 				BFD0C74C1D2077930031339E /* Book.swift in Sources */,
 				BFCD93AF1D150C370044E496 /* AppDelegate.swift in Sources */,
+				BF9D6D251D2C9D1D0007A3E2 /* SearchViewModel.swift in Sources */,
 				BFCD93B71D150C370044E496 /* Swifty_Librarian.xcdatamodeld in Sources */,
 				BF6A41A11D165311007CA1E4 /* Branch.swift in Sources */,
 			);

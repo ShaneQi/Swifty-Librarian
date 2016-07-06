@@ -10,3 +10,6 @@ import Alamofire
 
 let branchListURL = "http://localhost:8181/branch/list"
 let branchListMETHOD = Method.GET
+
+let bookSearchURL = "http://localhost:8181/book/search"
+let bookSearchMETHOD = Method.GET
