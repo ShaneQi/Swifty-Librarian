@@ -90,14 +90,14 @@ extension CheckViewController: UITableViewDataSource {
 				cell.button.rx_tap.subscribeNext({
 					_ in
 					self.viewModel.performCheckout({
-						status in
+						status, note in
 						if status {
 							let alert = UIAlertController(title: "SUCCESS", message: "", preferredStyle: .Alert)
 							alert.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
 							self.presentViewController(alert, animated: true, completion: nil)
 							self.viewModel.clearOut()
 						} else {
-							let alert = UIAlertController(title: "FAILURE", message: "You already got 3 active loans.", preferredStyle: .Alert)
+							let alert = UIAlertController(title: "FAILURE", message: note, preferredStyle: .Alert)
 							alert.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
 							self.presentViewController(alert, animated: true, completion: nil)
 						}
@@ -177,6 +177,7 @@ extension CheckViewController: UITableViewDataSource {
 				return cell
 			case (2, 0):
 				let cell = tableView.dequeueReusableCellWithIdentifier("ButtonCell") as! ButtonCell
+				cell.button.setTitle("Check-in", forState: .Normal)
 				cell.button.rx_tap.subscribeNext({
 					self.viewModel.performCheckin({
 						fineDays in

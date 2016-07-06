@@ -46,7 +46,7 @@ class CheckViewModel {
 		})
 	}
 	
-	func performCheckout(completion: ((statue: Bool) -> Void)) {
+	func performCheckout(completion: ((statue: Bool, note: String) -> Void)) {
 		Alamofire.request(loanCheckoutMETHOD, loanCheckoutURL, parameters: ["book": checkoutBookId.value, "borrower": checkoutCardId.value, "date": checkoutDateString.value], encoding: .URLEncodedInURL).validate().responseJSON(completionHandler: {
 			response in
 			switch response.result {
@@ -54,9 +54,9 @@ class CheckViewModel {
 				if let value = response.result.value {
 					let json = JSON(value)
 					if json["status"].boolValue == true {
-						completion (statue: true)
+						completion (statue: true, note: "")
 					} else {
-						completion (statue: false)
+						completion (statue: false, note: json["reason"].stringValue)
 					}
 					
 				}

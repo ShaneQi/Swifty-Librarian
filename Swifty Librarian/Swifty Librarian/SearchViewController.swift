@@ -27,6 +27,11 @@ class SearchViewController: UIViewController {
 		
 		searchBar.delegate = self
 		
+		self.view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard)))
+	}
+	
+	func dismissKeyboard() {
+		self.view.endEditing(true)
 	}
 
 }

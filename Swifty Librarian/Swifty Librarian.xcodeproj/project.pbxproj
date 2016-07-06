@@ -29,17 +29,17 @@
 		BF9D6D3E1D2CB6960007A3E2 /* ButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9D6D3D1D2CB6960007A3E2 /* ButtonCell.swift */; };
 		BF9D6D401D2CB7420007A3E2 /* ButtonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF9D6D3F1D2CB7420007A3E2 /* ButtonCell.xib */; };
 		BF9D6D421D2CC1000007A3E2 /* CheckViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9D6D411D2CC1000007A3E2 /* CheckViewModel.swift */; };
-		BF9D6D441D2CC3700007A3E2 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF9D6D431D2CC3700007A3E2 /* RxSwift.framework */; };
-		BF9D6D451D2CC3700007A3E2 /* RxSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BF9D6D431D2CC3700007A3E2 /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		BF9D6D471D2CC3750007A3E2 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF9D6D461D2CC3750007A3E2 /* RxCocoa.framework */; };
-		BF9D6D481D2CC3750007A3E2 /* RxCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BF9D6D461D2CC3750007A3E2 /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BF9D6D4B1D2CDF4A0007A3E2 /* BorrowerView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF9D6D491D2CDF4A0007A3E2 /* BorrowerView.storyboard */; };
 		BF9D6D4E1D2CDF7A0007A3E2 /* BorrowerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9D6D4D1D2CDF7A0007A3E2 /* BorrowerViewController.swift */; };
 		BF9D6D501D2CE0DA0007A3E2 /* BorrowerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9D6D4F1D2CE0DA0007A3E2 /* BorrowerViewModel.swift */; };
-		BFA4C6531D2C962C0098B312 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFA4C6521D2C962C0098B312 /* Alamofire.framework */; };
-		BFA4C6541D2C962C0098B312 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BFA4C6521D2C962C0098B312 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		BFA4C6571D2C96330098B312 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFA4C6561D2C96330098B312 /* SwiftyJSON.framework */; };
-		BFA4C6581D2C96330098B312 /* SwiftyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BFA4C6561D2C96330098B312 /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BF9D6D591D2DA3050007A3E2 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF9D6D581D2DA3050007A3E2 /* RxSwift.framework */; };
+		BF9D6D5A1D2DA3050007A3E2 /* RxSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BF9D6D581D2DA3050007A3E2 /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BF9D6D5C1D2DA30A0007A3E2 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF9D6D5B1D2DA30A0007A3E2 /* RxCocoa.framework */; };
+		BF9D6D5D1D2DA30A0007A3E2 /* RxCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BF9D6D5B1D2DA30A0007A3E2 /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BF9D6D5F1D2DA30E0007A3E2 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF9D6D5E1D2DA30E0007A3E2 /* Alamofire.framework */; };
+		BF9D6D601D2DA30E0007A3E2 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BF9D6D5E1D2DA30E0007A3E2 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BF9D6D621D2DA3160007A3E2 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF9D6D611D2DA3160007A3E2 /* SwiftyJSON.framework */; };
+		BF9D6D631D2DA3160007A3E2 /* SwiftyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BF9D6D611D2DA3160007A3E2 /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BFCD93AF1D150C370044E496 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCD93AE1D150C370044E496 /* AppDelegate.swift */; };
 		BFCD93B11D150C370044E496 /* IndexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCD93B01D150C370044E496 /* IndexViewController.swift */; };
 		BFCD93B41D150C370044E496 /* IndexView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFCD93B21D150C370044E496 /* IndexView.storyboard */; };
@@ -80,10 +80,10 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				BF9D6D481D2CC3750007A3E2 /* RxCocoa.framework in Embed Frameworks */,
-				BFA4C6581D2C96330098B312 /* SwiftyJSON.framework in Embed Frameworks */,
-				BFA4C6541D2C962C0098B312 /* Alamofire.framework in Embed Frameworks */,
-				BF9D6D451D2CC3700007A3E2 /* RxSwift.framework in Embed Frameworks */,
+				BF9D6D631D2DA3160007A3E2 /* SwiftyJSON.framework in Embed Frameworks */,
+				BF9D6D5D1D2DA30A0007A3E2 /* RxCocoa.framework in Embed Frameworks */,
+				BF9D6D601D2DA30E0007A3E2 /* Alamofire.framework in Embed Frameworks */,
+				BF9D6D5A1D2DA3050007A3E2 /* RxSwift.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -113,13 +113,13 @@
 		BF9D6D3D1D2CB6960007A3E2 /* ButtonCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonCell.swift; sourceTree = "<group>"; };
 		BF9D6D3F1D2CB7420007A3E2 /* ButtonCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ButtonCell.xib; sourceTree = "<group>"; };
 		BF9D6D411D2CC1000007A3E2 /* CheckViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckViewModel.swift; sourceTree = "<group>"; };
-		BF9D6D431D2CC3700007A3E2 /* RxSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = RxSwift.framework; path = "/Users/Shadow/Library/Developer/Xcode/DerivedData/Swifty-Librarian-gzqewftotnlqtudquqeurxllaquk/Build/Products/Debug-iphonesimulator/RxSwift.framework"; sourceTree = "<absolute>"; };
-		BF9D6D461D2CC3750007A3E2 /* RxCocoa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = RxCocoa.framework; path = "/Users/Shadow/Library/Developer/Xcode/DerivedData/Swifty-Librarian-gzqewftotnlqtudquqeurxllaquk/Build/Products/Debug-iphonesimulator/RxCocoa.framework"; sourceTree = "<absolute>"; };
 		BF9D6D4A1D2CDF4A0007A3E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/BorrowerView.storyboard; sourceTree = "<group>"; };
 		BF9D6D4D1D2CDF7A0007A3E2 /* BorrowerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorrowerViewController.swift; sourceTree = "<group>"; };
 		BF9D6D4F1D2CE0DA0007A3E2 /* BorrowerViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorrowerViewModel.swift; sourceTree = "<group>"; };
-		BFA4C6521D2C962C0098B312 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = Alamofire.framework; path = "/Users/Shadow/Library/Developer/Xcode/DerivedData/Swifty-Librarian-gzqewftotnlqtudquqeurxllaquk/Build/Products/Debug-iphonesimulator/Alamofire.framework"; sourceTree = "<absolute>"; };
-		BFA4C6561D2C96330098B312 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = SwiftyJSON.framework; path = "/Users/Shadow/Library/Developer/Xcode/DerivedData/Swifty-Librarian-gzqewftotnlqtudquqeurxllaquk/Build/Products/Debug-iphonesimulator/SwiftyJSON.framework"; sourceTree = "<absolute>"; };
+		BF9D6D581D2DA3050007A3E2 /* RxSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = RxSwift.framework; path = "/Users/Shadow/Library/Developer/Xcode/DerivedData/Swifty-Librarian-gzqewftotnlqtudquqeurxllaquk/Build/Products/Debug-iphoneos/RxSwift.framework"; sourceTree = "<absolute>"; };
+		BF9D6D5B1D2DA30A0007A3E2 /* RxCocoa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = RxCocoa.framework; path = "/Users/Shadow/Library/Developer/Xcode/DerivedData/Swifty-Librarian-gzqewftotnlqtudquqeurxllaquk/Build/Products/Debug-iphoneos/RxCocoa.framework"; sourceTree = "<absolute>"; };
+		BF9D6D5E1D2DA30E0007A3E2 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = Alamofire.framework; path = "/Users/Shadow/Library/Developer/Xcode/DerivedData/Swifty-Librarian-gzqewftotnlqtudquqeurxllaquk/Build/Products/Debug-iphoneos/Alamofire.framework"; sourceTree = "<absolute>"; };
+		BF9D6D611D2DA3160007A3E2 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = SwiftyJSON.framework; path = "/Users/Shadow/Library/Developer/Xcode/DerivedData/Swifty-Librarian-gzqewftotnlqtudquqeurxllaquk/Build/Products/Debug-iphoneos/SwiftyJSON.framework"; sourceTree = "<absolute>"; };
 		BFCD93AB1D150C370044E496 /* Swifty Librarian.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swifty Librarian.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFCD93AE1D150C370044E496 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BFCD93B01D150C370044E496 /* IndexViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexViewController.swift; sourceTree = "<group>"; };
@@ -147,10 +147,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF9D6D471D2CC3750007A3E2 /* RxCocoa.framework in Frameworks */,
-				BFA4C6571D2C96330098B312 /* SwiftyJSON.framework in Frameworks */,
-				BFA4C6531D2C962C0098B312 /* Alamofire.framework in Frameworks */,
-				BF9D6D441D2CC3700007A3E2 /* RxSwift.framework in Frameworks */,
+				BF9D6D621D2DA3160007A3E2 /* SwiftyJSON.framework in Frameworks */,
+				BF9D6D5C1D2DA30A0007A3E2 /* RxCocoa.framework in Frameworks */,
+				BF9D6D5F1D2DA30E0007A3E2 /* Alamofire.framework in Frameworks */,
+				BF9D6D591D2DA3050007A3E2 /* RxSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,10 +300,10 @@
 		BFCD93A21D150C370044E496 = {
 			isa = PBXGroup;
 			children = (
-				BF9D6D461D2CC3750007A3E2 /* RxCocoa.framework */,
-				BF9D6D431D2CC3700007A3E2 /* RxSwift.framework */,
-				BFA4C6561D2C96330098B312 /* SwiftyJSON.framework */,
-				BFA4C6521D2C962C0098B312 /* Alamofire.framework */,
+				BF9D6D611D2DA3160007A3E2 /* SwiftyJSON.framework */,
+				BF9D6D5E1D2DA30E0007A3E2 /* Alamofire.framework */,
+				BF9D6D5B1D2DA30A0007A3E2 /* RxCocoa.framework */,
+				BF9D6D581D2DA3050007A3E2 /* RxSwift.framework */,
 				BFCD93AD1D150C370044E496 /* Swifty Librarian */,
 				BFCD93C51D150C370044E496 /* Swifty LibrarianTests */,
 				BFCD93D01D150C370044E496 /* Swifty LibrarianUITests */,
@@ -495,6 +495,7 @@
 				TargetAttributes = {
 					BFCD93AA1D150C370044E496 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = T284UZDTGP;
 					};
 					BFCD93C11D150C370044E496 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -759,11 +760,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Swifty Librarian/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.github.shaneqi.Swifty-Librarian";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -771,11 +775,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Swifty Librarian/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.github.shaneqi.Swifty-Librarian";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

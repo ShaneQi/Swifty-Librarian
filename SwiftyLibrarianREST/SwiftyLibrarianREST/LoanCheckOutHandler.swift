@@ -35,12 +35,36 @@ class LoanCheckOutHandler: RequestHandler {
 		
 		mysql.query("SELECT * FROM book_loans A WHERE A.card_id = '\(paramCardId)' AND date_in IS NULL;")
 		guard mysql.storeResults()?.numRows() < 3 else {
-			let responseDictionary: [String: Any] = ["status": false]
+			let responseDictionary: [String: Any] = ["status": false, "reason": "You already got 3 active loans."]
 			let responseString = try! responseDictionary.jsonEncodedString()
 			response.appendBodyString(responseString)
 			response.requestCompletedCallback()
 			return
 		}
+		
+		mysql.query("SELECT A.fine_id, A.fine_amount, A.paid FROM fine A, book_loans B WHERE A.loan_id = B.loan_id AND B.card_id = '\(paramCardId)' AND A.paid = 0;")
+		guard mysql.storeResults()?.numRows() == 0 else {
+			let responseDictionary: [String: Any] = ["status": false, "reason": "You got unpaid fine."]
+			let responseString = try! responseDictionary.jsonEncodedString()
+			response.appendBodyString(responseString)
+			response.requestCompletedCallback()
+			return
+		}
+		
+		let nowDate = NSDate().toString().toDate()
+		mysql.query("SELECT * FROM book_loans WHERE card_id = '\(paramCardId)' AND date_in is NULL;")
+		mysql.storeResults()?.forEachRow({
+			row in
+			let due = row[4]
+			let dueDate = due.toDate()
+			guard nowDate.timeIntervalSinceDate(dueDate) < 0 else {
+				let responseDictionary: [String: Any] = ["status": false, "reason": "You got over-due loan."]
+				let responseString = try! responseDictionary.jsonEncodedString()
+				response.appendBodyString(responseString)
+				response.requestCompletedCallback()
+				return
+			}
+		})
 		
 		let now = paramOutDate.toDate()
 		let due = now.dateByAddingTimeInterval(60*60*24*14)

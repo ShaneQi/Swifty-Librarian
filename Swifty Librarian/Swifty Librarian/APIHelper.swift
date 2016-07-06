@@ -8,29 +8,31 @@
 
 import Alamofire
 
-let branchListURL = "http://localhost:8181/branch/list"
+let baseURL = "http://192.168.1.102:8181"
+
+let branchListURL = baseURL + "/branch/list"
 let branchListMETHOD = Method.GET
 
-let bookSearchURL = "http://localhost:8181/book/search"
+let bookSearchURL = baseURL + "/book/search"
 let bookSearchMETHOD = Method.GET
 
-let bookAvailabilityURL = "http://localhost:8181/book/availability"
+let bookAvailabilityURL = baseURL + "/book/availability"
 let bookAvailabilityMETHOD = Method.GET
 
-let loanCheckinURL = "http://localhost:8181/loan/checkin"
+let loanCheckinURL = baseURL + "/loan/checkin"
 let loanCheckinMETHOD = Method.GET
 
-let loanCheckoutURL = "http://localhost:8181/loan/checkout"
+let loanCheckoutURL = baseURL + "/loan/checkout"
 let loanCheckoutMETHOD = Method.GET
 
-let loanListURL = "http://localhost:8181/loan/list"
+let loanListURL = baseURL + "/loan/list"
 let loanListMETHOD = Method.GET
 
-let borrowerFineURL = "http://localhost:8181/borrower/fine"
+let borrowerFineURL = baseURL + "/borrower/fine"
 let borrowerFineMETHOD = Method.GET
 
-let loanPaymentURL = "http://localhost:8181/loan/payment"
+let loanPaymentURL = baseURL + "/loan/payment"
 let loanPaymentMETHOD = Method.GET
 
-let borrowerCreateURL = "http://localhost:8181/borrower/create"
+let borrowerCreateURL = baseURL + "/borrower/create"
 let borrowerCreateMETHOD = Method.POST

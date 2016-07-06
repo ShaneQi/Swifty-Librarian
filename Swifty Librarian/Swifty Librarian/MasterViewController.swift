@@ -17,10 +17,7 @@ class MasterViewController: UIViewController {
 			"Books",
 			"Checking In/Out",
 			"Borrower",
-			],
-		[
-			"Back"
-		]
+			]
 	]
 	
 	override func viewDidLoad() {
