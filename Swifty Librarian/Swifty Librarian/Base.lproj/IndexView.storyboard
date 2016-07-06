@@ -37,8 +37,9 @@
                                 </connections>
                             </containerView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Qf-OL-vNz">
-                                <rect key="frame" x="659" y="974" width="48" height="30"/>
-                                <state key="normal" title="ENTER"/>
+                                <rect key="frame" x="641.5" y="984" width="83" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="E N T E R"/>
                                 <connections>
                                     <segue destination="rmg-ks-LXG" kind="show" identifier="ChoosingBranchSegue" id="va0-kD-jQ0"/>
                                 </connections>
@@ -46,7 +47,8 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="sCC-rO-Mzo" firstAttribute="top" secondItem="2Qf-OL-vNz" secondAttribute="bottom" constant="20" id="0rL-oR-8r3"/>
+                            <constraint firstItem="sCC-rO-Mzo" firstAttribute="top" secondItem="2Qf-OL-vNz" secondAttribute="bottom" constant="10" id="0rL-oR-8r3"/>
+                            <constraint firstItem="2Qf-OL-vNz" firstAttribute="top" secondItem="Gae-sA-4Xx" secondAttribute="bottom" constant="10" id="4sQ-3o-Tl2"/>
                             <constraint firstItem="Gae-sA-4Xx" firstAttribute="height" secondItem="wE5-pW-C1h" secondAttribute="height" constant="-50" id="Egc-bM-JQB"/>
                             <constraint firstItem="Gae-sA-4Xx" firstAttribute="width" secondItem="wE5-pW-C1h" secondAttribute="width" id="PPb-Z6-SHV"/>
                             <constraint firstItem="Gae-sA-4Xx" firstAttribute="top" secondItem="wE5-pW-C1h" secondAttribute="topMargin" id="nug-Zg-Uar"/>

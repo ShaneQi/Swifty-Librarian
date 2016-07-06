@@ -22,4 +22,10 @@
    <FileRef
       location = "group:Perfect/Connectors/MySQL/MySQL.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:SwiftyJSON/SwiftyJSON.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Alamofire/Alamofire.xcodeproj">
+   </FileRef>
 </Workspace>
