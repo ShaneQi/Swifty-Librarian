@@ -33,7 +33,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SearchCell" id="qQU-ei-vOT" customClass="SearchCell" customModule="Swifty_Librarian" customModuleProvider="target">
-                                        <rect key="frame" x="173.5" y="10" width="634" height="218"/>
+                                        <rect key="frame" x="174" y="10" width="634" height="218"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="634" height="218"/>
@@ -49,13 +49,13 @@
                                                     <rect key="frame" x="168" y="8" width="458" height="202"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XUF-2b-iUg">
-                                                            <rect key="frame" x="0.0" y="0.0" width="38" height="40.5"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="38" height="41"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ISBN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Jt-1M-Fx0">
-                                                            <rect key="frame" x="0.0" y="40" width="38" height="40.5"/>
+                                                            <rect key="frame" x="0.0" y="40" width="38" height="41"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
@@ -67,13 +67,13 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Publisher:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CXo-ly-Ba0">
-                                                            <rect key="frame" x="0.0" y="121" width="76" height="40.5"/>
+                                                            <rect key="frame" x="0.0" y="121" width="76" height="41"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z6e-g1-gB8">
-                                                            <rect key="frame" x="0.0" y="161" width="120" height="40.5"/>
+                                                            <rect key="frame" x="0.0" y="161" width="120" height="41"/>
                                                             <state key="normal" title="Check Availability"/>
                                                             <connections>
                                                                 <action selector="checkAvailability:" destination="qQU-ei-vOT" eventType="touchUpInside" id="gli-Wu-o0D"/>

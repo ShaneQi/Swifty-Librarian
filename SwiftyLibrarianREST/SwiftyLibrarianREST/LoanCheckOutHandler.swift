@@ -15,7 +15,7 @@ class LoanCheckOutHandler: RequestHandler {
 	
 	func handleRequest(request: WebRequest, response: WebResponse) {
 		
-		guard let paramBookId = request.param("book"), paramCardId = request.param("borrower") else {
+		guard let paramBookId = request.param("book"), paramCardId = request.param("borrower"), paramOutDate = request.param("date") else {
 			let responseString = PerfectHelper.instance.JSONString(withFailureReason: "Bad parameters.")
 			response.appendBodyString(responseString)
 			response.requestCompletedCallback()
@@ -33,8 +33,8 @@ class LoanCheckOutHandler: RequestHandler {
 		
 		defer { mysql.close() }
 		
-		mysql.query("SELECT * FROM fine A, book_loans B	WHERE A.loan_id = B.loan_id AND A.paid = 0 AND B.card_id = '\(paramCardId)';")
-		guard mysql.storeResults()?.numRows() < 3 {
+		mysql.query("SELECT * FROM book_loans A WHERE A.card_id = '\(paramCardId)' AND date_in IS NULL;")
+		guard mysql.storeResults()?.numRows() < 3 else {
 			let responseDictionary: [String: Any] = ["status": false]
 			let responseString = try! responseDictionary.jsonEncodedString()
 			response.appendBodyString(responseString)
@@ -42,7 +42,7 @@ class LoanCheckOutHandler: RequestHandler {
 			return
 		}
 		
-		let now = NSDate()
+		let now = paramOutDate.toDate()
 		let due = now.dateByAddingTimeInterval(60*60*24*14)
 		
 		mysql.query("INSERT INTO book_loans (book_id, card_id, date_out, date_due) VALUES (\(paramBookId), '\(paramCardId)', '\(now.toString())', '\(due.toString())');")

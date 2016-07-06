@@ -25,7 +25,7 @@ class BorrowerViewModel {
 	}
 	
 	func performPayment(index: Int) {
-		let fineId = unpaidFines.value[index]
+//		let fineId = unpaidFines.value[index]
 	
 	}
 	

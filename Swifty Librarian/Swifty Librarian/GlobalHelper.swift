@@ -7,8 +7,11 @@
 //
 
 import Foundation
+import UIKit
 
 var selectedBranchId = 0
+
+var theTabBarController: UITabBarController!
 
 var dateFormatter: NSDateFormatter {
 	let formatter = NSDateFormatter()

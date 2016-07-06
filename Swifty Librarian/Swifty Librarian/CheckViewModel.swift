@@ -32,7 +32,7 @@ class CheckViewModel {
 	}
 	
 	func performCheckout(completion: ((statue: Bool) -> Void)) {
-		Alamofire.request(loanCheckoutMETHOD, loanCheckoutURL, parameters: ["book": checkoutBookId, "borrower": checkoutCardId], encoding: .URLEncodedInURL).validate().responseJSON(completionHandler: {
+		Alamofire.request(loanCheckoutMETHOD, loanCheckoutURL, parameters: ["book": checkoutBookId.value, "borrower": checkoutCardId.value, "date": checkoutDateString.value], encoding: .URLEncodedInURL).validate().responseJSON(completionHandler: {
 			response in
 			switch response.result {
 			case .Success:
@@ -51,12 +51,11 @@ class CheckViewModel {
 		})
 	}
 	
-	func clear() {
-		checkinDateString.value = ""
-		checkinBookId.value = ""
-		checkinCardId.value = ""
-		
-		checkoutDateString.value = ""
+	func performFetchLoans() {
+	
+	}
+	
+	func clearOut() {
 		checkoutBookId.value = ""
 		checkoutCardId.value = ""
 	}

@@ -25,7 +25,8 @@ class SearchCell: UICollectionViewCell {
 	@IBAction func checkAvailability(sender: UIButton) {
 		if !(sender.titleLabel?.text?.containsString("Check"))! {
 			if !(sender.titleLabel?.text?.containsString("not"))! {
-				
+				CheckViewModel.instance.checkoutBookId.value = String(copies[0])
+				theTabBarController.selectedIndex = 1
 			}
 			return
 		}
@@ -36,6 +37,7 @@ class SearchCell: UICollectionViewCell {
 			case .Success:
 				if let value = response.result.value {
 					let json = JSON(value)
+					self.copies.removeAll()
 					for bookCopyJSON in json["books"].arrayValue {
 						self.copies.append(bookCopyJSON["book_id"].intValue)
 					}

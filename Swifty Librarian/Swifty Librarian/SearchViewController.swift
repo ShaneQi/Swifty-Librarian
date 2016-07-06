@@ -16,6 +16,7 @@ class SearchViewController: UIViewController {
 	@IBOutlet var collectionView: UICollectionView!
 	
 	override func viewDidLoad() {
+		theTabBarController = self.parentViewController as! UITabBarController
 		
 		viewModel.performFetchSearchingResult("", completion: {
 			self.collectionView.reloadData()
