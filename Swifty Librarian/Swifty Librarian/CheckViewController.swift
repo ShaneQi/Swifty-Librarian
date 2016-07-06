@@ -113,125 +113,91 @@ extension CheckViewController: UITableViewDataSource {
 			switch (indexPath.section, indexPath.row) {
 			case (0, 0):
 				let cell = tableView.dequeueReusableCellWithIdentifier("TextFieldCell") as! TextFieldCell
+				cell.textField.placeholder = "Borrower Card ID or Book ID"
+				cell.textField.rx_text.subscribeNext({
+					nextString in
+					self.viewModel.checkinKeyword.value = nextString
+				}).addDisposableTo(viewModel.disposeBag)
 				return cell
 			case (0, 1):
 				let cell = tableView.dequeueReusableCellWithIdentifier("ButtonCell") as! ButtonCell
+				cell.button.setTitle("SEARCH", forState: .Normal)
+				cell.button.rx_tap.subscribeNext({
+					self.viewModel.performFetchLoans({
+						loans in
+						if loans.count > 0 {
+							let alert = UIAlertController(title: "LOANS", message: "", preferredStyle: .ActionSheet)
+							for loan in loans {
+								alert.addAction(UIAlertAction(title: "\(loan.cardId) - \(loan.bookId)", style: .Default, handler: {
+									_ in
+									self.viewModel.checkinBookId.value = loan.bookId
+									self.viewModel.checkinCardId.value = loan.cardId
+									self.viewModel.checkinLoanId.value = loan.loanId
+								}))
+							}
+							alert.popoverPresentationController?.sourceView = self.view
+							alert.popoverPresentationController?.sourceRect = self.view.bounds
+							self.presentViewController(alert, animated: true, completion: nil)
+						} else {
+							let alert = UIAlertController(title: "ERROR", message: "No available loan for this borrower or book.", preferredStyle: .Alert)
+							alert.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
+							self.presentViewController(alert, animated: true, completion: nil)
+						}
+
+					})
+				}).addDisposableTo(viewModel.disposeBag)
 				return cell
 			case (1, 0):
 				let cell = tableView.dequeueReusableCellWithIdentifier("LabelCell") as! LabelCell
+				self.viewModel.checkinCardId.asObservable().subscribeNext({
+					nextString in
+					cell.label.text = "Borrower Card ID: " + nextString
+				}).addDisposableTo(viewModel.disposeBag)
 				return cell
 			case (1, 1):
 				let cell = tableView.dequeueReusableCellWithIdentifier("LabelCell") as! LabelCell
+				self.viewModel.checkinBookId.asObservable().subscribeNext({
+					nextString in
+					cell.label.text = "Book ID: " + nextString
+				}).addDisposableTo(viewModel.disposeBag)
 				return cell
 			case (1, 2):
 				let cell = tableView.dequeueReusableCellWithIdentifier("LabelCell") as! LabelCell
+				self.viewModel.checkinDateString.asObservable().subscribeNext({
+					nextString in
+					cell.label.text = "Check-in Date: " + nextString
+				}).addDisposableTo(viewModel.disposeBag)
 				return cell
 			case (1, 3):
 				let cell = tableView.dequeueReusableCellWithIdentifier("DatePickerCell") as! DatePickerCell
+				cell.datePicker.rx_date.subscribeNext({
+					nextDate in
+					self.viewModel.checkinDateString.value = dateFormatter.stringFromDate(nextDate)
+				}).addDisposableTo(viewModel.disposeBag)
 				return cell
 			case (2, 0):
 				let cell = tableView.dequeueReusableCellWithIdentifier("ButtonCell") as! ButtonCell
+				cell.button.rx_tap.subscribeNext({
+					self.viewModel.performCheckin({
+						fineDays in
+						if fineDays != nil {
+							let alert = UIAlertController(title: "SUCCESS", message: "Overdue \(fineDays!) Days!", preferredStyle: .Alert)
+							alert.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
+							self.presentViewController(alert, animated: true, completion: nil)
+							self.viewModel.clearOut()
+						} else {
+							let alert = UIAlertController(title: "SUCCESS", message: "No Overdue.", preferredStyle: .Alert)
+							alert.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
+							self.presentViewController(alert, animated: true, completion: nil)
+							self.viewModel.clearOut()
+						}
+					})
+				}).addDisposableTo(viewModel.disposeBag)
 				return cell
 			default:
 				fatalError("\(indexPath) cell is not configured.")
 			}
 		}
-		
-//		switch (indexPath.section, indexPath.row) {
-//		case (0, 0):
-//			let cell = tableView.dequeueReusableCellWithIdentifier("TextFieldCell") as! TextFieldCell
-//			if tableView == inTableView {
-//				cell.textField.rx_text.subscribeNext({
-//					nextString in
-//					self.viewModel.checkinBookId.value = nextString
-//				}).addDisposableTo(viewModel.disposeBag)
-//			} else {
-//				cell.textField.rx_text.subscribeNext({
-//					nextString in
-//					self.viewModel.checkoutBookId.value = nextString
-//				}).addDisposableTo(viewModel.disposeBag)
-//			}
-//			return cell
-//		case (0, 1):
-//			let cell = tableView.dequeueReusableCellWithIdentifier("TextFieldCell") as! TextFieldCell
-//			if tableView == inTableView {
-//				cell.textField.rx_text.subscribeNext({
-//					nextString in
-//					self.viewModel.checkinCardId.value = nextString
-//				}).addDisposableTo(viewModel.disposeBag)
-//			} else {
-//				cell.textField.rx_text.subscribeNext({
-//					nextString in
-//					self.viewModel.checkoutCardId.value = nextString
-//				}).addDisposableTo(viewModel.disposeBag)
-//			}
-//			return cell
-//		case (0, 2):
-//			let cell = tableView.dequeueReusableCellWithIdentifier("LabelCell") as! LabelCell
-//			if tableView == inTableView {
-//				self.viewModel.checkinDateString.asObservable().subscribeNext({
-//					nextString in
-//					cell.label.text = "Check-in date: " + nextString
-//				}).addDisposableTo(viewModel.disposeBag)
-//			} else {
-//				self.viewModel.checkoutDateString.asObservable().subscribeNext({
-//					nextString in
-//					cell.label.text = "Check-out date: " + nextString
-//				}).addDisposableTo(viewModel.disposeBag)
-//			}
-//			
-//			return cell
-//		case (0, 3):
-//			let cell = tableView.dequeueReusableCellWithIdentifier("DatePickerCell") as! DatePickerCell
-//			if tableView == inTableView {
-//				cell.datePicker.rx_date.subscribeNext({
-//					nextDate in
-//					self.viewModel.checkinDateString.value = dateFormatter.stringFromDate(nextDate)
-//				}).addDisposableTo(viewModel.disposeBag)
-//			} else {
-//				cell.datePicker.rx_date.subscribeNext({
-//					nextDate in
-//					self.viewModel.checkoutDateString.value = dateFormatter.stringFromDate(nextDate)
-//				}).addDisposableTo(viewModel.disposeBag)
-//			}
-//			return cell
-//		case (1, 0):
-//			let cell = tableView.dequeueReusableCellWithIdentifier("ButtonCell") as! ButtonCell
-//			if tableView == inTableView {
-//				cell.button.setTitle("Check-in", forState: .Normal)
-//				cell.button.rx_tap.subscribeNext({
-//					self.viewModel.performCheckin({
-//						_ in
-//						let alert = UIAlertController(title: "SUCCESS", message: "", preferredStyle: .Alert)
-//						alert.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
-//						self.presentViewController(alert, animated: true, completion: nil)
-//						self.viewModel.clear()
-//					})
-//					
-//				}).addDisposableTo(viewModel.disposeBag)
-//			} else {
-//				cell.button.setTitle("Check-out", forState: .Normal)
-//				cell.button.rx_tap.subscribeNext({
-//					self.viewModel.performCheckout({
-//						status in
-//						if status {
-//							let alert = UIAlertController(title: "SUCCESS", message: "", preferredStyle: .Alert)
-//							alert.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
-//							self.presentViewController(alert, animated: true, completion: nil)
-//						} else {
-//							let alert = UIAlertController(title: "FAILURE", message: "You already got 3 active loans.", preferredStyle: .Alert)
-//							alert.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
-//							self.presentViewController(alert, animated: true, completion: nil)
-//						}
-//						self.viewModel.clear()
-//					})
-//				}).addDisposableTo(viewModel.disposeBag)
-//			}
-//			return cell
-//		default:
-//			let cell = tableView.dequeueReusableCellWithIdentifier("LabelCell") as! LabelCell
-//			return cell
-//		}
 	}
 	
 }

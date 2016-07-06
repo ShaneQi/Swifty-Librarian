@@ -14,6 +14,7 @@
 		BF9683711D2B6DDC00B58891 /* LoanPaymentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9683701D2B6DDC00B58891 /* LoanPaymentHandler.swift */; };
 		BF9683731D2B6FDA00B58891 /* BorrowerCreateHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9683721D2B6FDA00B58891 /* BorrowerCreateHandler.swift */; };
 		BF9683751D2B761000B58891 /* BorowerFineHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9683741D2B761000B58891 /* BorowerFineHandler.swift */; };
+		BF9D6D571D2D7ECF0007A3E2 /* LoanListHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9D6D561D2D7ECF0007A3E2 /* LoanListHandler.swift */; };
 		BFA4C6511D2C91260098B312 /* BranchListHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA4C6501D2C91260098B312 /* BranchListHandler.swift */; };
 		BFD0C77A1D20956E0031339E /* SwiftyLibrarianREST.h in Headers */ = {isa = PBXBuildFile; fileRef = BFD0C7791D20956E0031339E /* SwiftyLibrarianREST.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BFD0C7821D20965C0031339E /* PerfectInit.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD0C7811D20965C0031339E /* PerfectInit.swift */; };
@@ -31,6 +32,7 @@
 		BF9683701D2B6DDC00B58891 /* LoanPaymentHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoanPaymentHandler.swift; sourceTree = "<group>"; };
 		BF9683721D2B6FDA00B58891 /* BorrowerCreateHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorrowerCreateHandler.swift; sourceTree = "<group>"; };
 		BF9683741D2B761000B58891 /* BorowerFineHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorowerFineHandler.swift; sourceTree = "<group>"; };
+		BF9D6D561D2D7ECF0007A3E2 /* LoanListHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoanListHandler.swift; sourceTree = "<group>"; };
 		BFA4C6501D2C91260098B312 /* BranchListHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BranchListHandler.swift; sourceTree = "<group>"; };
 		BFD0C7761D20956E0031339E /* SwiftyLibrarianREST.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyLibrarianREST.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFD0C7791D20956E0031339E /* SwiftyLibrarianREST.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftyLibrarianREST.h; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 				BF9683681D2B00C900B58891 /* BookAvailabilityHandler.swift */,
 				BF96836C1D2B0F3300B58891 /* LoanCheckOutHandler.swift */,
 				BF96836E1D2B3B8900B58891 /* LoanCheckInHandler.swift */,
+				BF9D6D561D2D7ECF0007A3E2 /* LoanListHandler.swift */,
 				BF9683701D2B6DDC00B58891 /* LoanPaymentHandler.swift */,
 				BF9683721D2B6FDA00B58891 /* BorrowerCreateHandler.swift */,
 				BF9683741D2B761000B58891 /* BorowerFineHandler.swift */,
@@ -190,6 +193,7 @@
 				BF96836F1D2B3B8900B58891 /* LoanCheckInHandler.swift in Sources */,
 				BFA4C6511D2C91260098B312 /* BranchListHandler.swift in Sources */,
 				BFD0C7821D20965C0031339E /* PerfectInit.swift in Sources */,
+				BF9D6D571D2D7ECF0007A3E2 /* LoanListHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

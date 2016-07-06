@@ -22,3 +22,6 @@ let loanCheckinMETHOD = Method.GET
 
 let loanCheckoutURL = "http://localhost:8181/loan/checkout"
 let loanCheckoutMETHOD = Method.GET
+
+let loanListURL = "http://localhost:8181/loan/list"
+let loanListMETHOD = Method.GET
