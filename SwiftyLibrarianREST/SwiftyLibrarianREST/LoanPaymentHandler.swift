@@ -32,7 +32,7 @@ class LoanPaymentHandler: RequestHandler {
 		
 		defer { mysql.close() }
 		
-		mysql.query("UPDATE fine SET paid = 1 WHERE loan_id = \(paramFineId);")
+		mysql.query("UPDATE fine SET paid = 1 WHERE fine_id = \(paramFineId);")
 		
 		response.requestCompletedCallback()
 		

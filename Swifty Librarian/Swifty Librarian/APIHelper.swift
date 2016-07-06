@@ -25,3 +25,12 @@ let loanCheckoutMETHOD = Method.GET
 
 let loanListURL = "http://localhost:8181/loan/list"
 let loanListMETHOD = Method.GET
+
+let borrowerFineURL = "http://localhost:8181/borrower/fine"
+let borrowerFineMETHOD = Method.GET
+
+let loanPaymentURL = "http://localhost:8181/loan/payment"
+let loanPaymentMETHOD = Method.GET
+
+let borrowerCreateURL = "http://localhost:8181/borrower/create"
+let borrowerCreateMETHOD = Method.POST

@@ -16,8 +16,7 @@ class MasterViewController: UIViewController {
 		[
 			"Books",
 			"Checking In/Out",
-			"Borrower Fine",
-			"Signup"
+			"Borrower",
 			],
 		[
 			"Back"
@@ -25,7 +24,6 @@ class MasterViewController: UIViewController {
 	]
 	
 	override func viewDidLoad() {
-//		self.navigationItem.titleView = xxx
 		
 		tableView.dataSource = self
 		tableView.delegate = self
@@ -66,8 +64,6 @@ extension MasterViewController: UITableViewDelegate {
 			tabBarController.selectedIndex = 1
 		case (0, 2):
 			tabBarController.selectedIndex = 2
-		case (0, 3):
-			break
 		default:
 			break
 		}
