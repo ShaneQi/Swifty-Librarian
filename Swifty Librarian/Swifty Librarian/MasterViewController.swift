@@ -16,15 +16,11 @@ class MasterViewController: UIViewController {
 		[
 			"Books",
 			"Checking In/Out",
-			"Borrowers"
-			],
-		[
-			"Back"
-		]
+			"Borrower",
+			]
 	]
 	
 	override func viewDidLoad() {
-//		self.navigationItem.titleView = xxx
 		
 		tableView.dataSource = self
 		tableView.delegate = self
@@ -55,6 +51,19 @@ extension MasterViewController: UITableViewDelegate {
 	
 	func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
 		tableView.cellForRowAtIndexPath(indexPath)?.selected = false
+	
+		let tabBarController = theTabBarController
+		
+		switch (indexPath.section, indexPath.row) {
+		case (0, 0):
+			tabBarController.selectedIndex = 0
+		case (0, 1):
+			tabBarController.selectedIndex = 1
+		case (0, 2):
+			tabBarController.selectedIndex = 2
+		default:
+			break
+		}
 	}
 	
 }

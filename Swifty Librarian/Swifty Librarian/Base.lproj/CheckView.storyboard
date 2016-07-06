@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="y4c-Zo-eUl">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--Item-->
+        <scene sceneID="QfQ-Yr-aip">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="y4c-Zo-eUl" customClass="CheckViewController" customModule="Swifty_Librarian" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="63f-Yp-ab7"/>
+                        <viewControllerLayoutGuide type="bottom" id="LSO-pk-hPW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="H2w-AS-aam">
+                        <rect key="frame" x="0.0" y="0.0" width="1045" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Id0-qd-PsZ">
+                                <rect key="frame" x="522" y="0.0" width="523" height="975"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="wol-tS-9nX">
+                                        <rect key="frame" x="0.0" y="0.0" width="523" height="975"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <connections>
+                                            <outlet property="dataSource" destination="y4c-Zo-eUl" id="xJA-f5-XZv"/>
+                                            <outlet property="delegate" destination="y4c-Zo-eUl" id="EjL-w5-lNB"/>
+                                        </connections>
+                                    </tableView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="wol-tS-9nX" firstAttribute="top" secondItem="Id0-qd-PsZ" secondAttribute="top" id="VJh-Zk-FFI"/>
+                                    <constraint firstAttribute="bottom" secondItem="wol-tS-9nX" secondAttribute="bottom" id="d42-2m-bQy"/>
+                                    <constraint firstAttribute="trailing" secondItem="wol-tS-9nX" secondAttribute="trailing" id="m7i-rK-uih"/>
+                                    <constraint firstItem="wol-tS-9nX" firstAttribute="leading" secondItem="Id0-qd-PsZ" secondAttribute="leading" id="yxs-8I-Aw1"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AXg-Wm-Svk">
+                                <rect key="frame" x="0.0" y="64" width="523" height="960"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="E65-TO-bWj">
+                                        <rect key="frame" x="0.0" y="0.0" width="523" height="960"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <sections/>
+                                        <connections>
+                                            <outlet property="dataSource" destination="y4c-Zo-eUl" id="V4P-5e-NvF"/>
+                                            <outlet property="delegate" destination="y4c-Zo-eUl" id="2vU-Rh-q2W"/>
+                                        </connections>
+                                    </tableView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="E65-TO-bWj" secondAttribute="bottom" id="142-kq-cuI"/>
+                                    <constraint firstItem="E65-TO-bWj" firstAttribute="leading" secondItem="AXg-Wm-Svk" secondAttribute="leading" id="1kd-IP-xU5"/>
+                                    <constraint firstItem="E65-TO-bWj" firstAttribute="top" secondItem="AXg-Wm-Svk" secondAttribute="top" id="WYW-3g-idh"/>
+                                    <constraint firstAttribute="trailing" secondItem="E65-TO-bWj" secondAttribute="trailing" id="lDB-50-IUc"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Id0-qd-PsZ" firstAttribute="width" secondItem="H2w-AS-aam" secondAttribute="width" multiplier="0.5" id="1XH-7m-q2n"/>
+                            <constraint firstItem="LSO-pk-hPW" firstAttribute="top" secondItem="Id0-qd-PsZ" secondAttribute="bottom" id="5zd-eP-IK4"/>
+                            <constraint firstItem="Id0-qd-PsZ" firstAttribute="top" secondItem="H2w-AS-aam" secondAttribute="top" id="8cT-Uz-NJu"/>
+                            <constraint firstItem="Id0-qd-PsZ" firstAttribute="top" secondItem="63f-Yp-ab7" secondAttribute="bottom" id="BQP-Wm-hNg"/>
+                            <constraint firstItem="AXg-Wm-Svk" firstAttribute="width" secondItem="H2w-AS-aam" secondAttribute="width" multiplier="0.5" id="Bgl-sd-dsE"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Id0-qd-PsZ" secondAttribute="trailing" constant="-20" id="CNT-WE-ic6"/>
+                            <constraint firstItem="AXg-Wm-Svk" firstAttribute="top" secondItem="63f-Yp-ab7" secondAttribute="bottom" id="IU5-5V-ge7"/>
+                            <constraint firstItem="Id0-qd-PsZ" firstAttribute="top" secondItem="63f-Yp-ab7" secondAttribute="bottom" id="Tja-og-svj"/>
+                            <constraint firstItem="AXg-Wm-Svk" firstAttribute="leading" secondItem="H2w-AS-aam" secondAttribute="leading" id="UCg-ht-hE0"/>
+                            <constraint firstItem="AXg-Wm-Svk" firstAttribute="bottom" secondItem="H2w-AS-aam" secondAttribute="bottomMargin" id="teF-Lo-LCN"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="BQP-Wm-hNg"/>
+                                <exclude reference="Tja-og-svj"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="g4o-7x-brG"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO">
+                        <color key="barTintColor" red="0.93725490196078431" green="0.31764705882352939" blue="0.2196078431372549" alpha="1" colorSpace="calibratedRGB"/>
+                    </simulatedNavigationBarMetrics>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <fixedSimulatedSizeMetrics key="simulatedDestinationMetrics">
+                        <size key="portraitSize" width="1045" height="1024"/>
+                        <size key="landscapeSize" width="1045" height="1024"/>
+                    </fixedSimulatedSizeMetrics>
+                    <connections>
+                        <outlet property="inTableView" destination="wol-tS-9nX" id="2uf-Fy-Ck8"/>
+                        <outlet property="outTableView" destination="E65-TO-bWj" id="UIf-In-x0T"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2LJ-ew-vVV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-684.5" y="2513"/>
+        </scene>
+    </scenes>
+</document>

@@ -4,20 +4,36 @@
 
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "01CF9A3A589543EF7C54AE39989B993FF728122B" : 0,
+    "8B123162C394A0A0A138779108E4C59DD771865A" : 0,
     "A9F18E68B09CC87F54A7B6BE0DF87F9CB8C06258" : 0,
     "E2306DAE0C98D148736A05084B6FAB44F03B4909" : 0,
-    "8B123162C394A0A0A138779108E4C59DD771865A" : 0
+    "C861FC00CEE0F6A6BE81FCFF6785FAA78C58EBB3" : 0,
+    "67620B5EFA902936DF04070AF595B76AB0333747" : 0
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "C4F3AB0E-40B0-44B1-BBE1-B2AEB1F8E324",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "01CF9A3A589543EF7C54AE39989B993FF728122B" : "Swifty-Librarian\/DLImageLoader\/",
+    "8B123162C394A0A0A138779108E4C59DD771865A" : "Swifty-Librarian\/RxSwift\/",
     "A9F18E68B09CC87F54A7B6BE0DF87F9CB8C06258" : "Swifty-Librarian\/",
     "E2306DAE0C98D148736A05084B6FAB44F03B4909" : "Swifty-Librarian\/Perfect\/",
-    "8B123162C394A0A0A138779108E4C59DD771865A" : "Swifty-Librarian\/RxSwift\/"
+    "C861FC00CEE0F6A6BE81FCFF6785FAA78C58EBB3" : "Swifty-Librarian\/SwiftyJSON\/",
+    "67620B5EFA902936DF04070AF595B76AB0333747" : "Swifty-Librarian\/Alamofire\/"
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "Swifty-Librarian",
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,
   "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Swifty-Librarian.xcworkspace",
   "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/AndreyLunevich\/DLImageLoader-iOS.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "01CF9A3A589543EF7C54AE39989B993FF728122B"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Alamofire\/Alamofire.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "67620B5EFA902936DF04070AF595B76AB0333747"
+    },
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/ReactiveX\/RxSwift.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
@@ -27,6 +43,11 @@
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/ShaneQi\/Swifty-Librarian.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "A9F18E68B09CC87F54A7B6BE0DF87F9CB8C06258"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/SwiftyJSON\/SwiftyJSON.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "C861FC00CEE0F6A6BE81FCFF6785FAA78C58EBB3"
     },
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/PerfectlySoft\/Perfect.git",

@@ -20,18 +20,20 @@ class IndexViewController: UIViewController {
 		
 		if segue.identifier == "EmbedingBranchViewControllerSegue" {
 			
-			pageViewControler = (segue.destinationViewController as! UIPageViewController)
-			pageViewControler.dataSource = self
-			for (index, branch) in viewModel.branches.enumerate() {
-				branchViewControllers.append(BranchViewController(branch: branch))
-				branchViewControllers.last?.view.backgroundColor = viewModel.colors[index]
-			}
-			pageViewControler.setViewControllers([branchViewControllers[0]], direction: .Forward, animated: true, completion: nil)
+			viewModel.fetchBranches({
+				self.pageViewControler = (segue.destinationViewController as! UIPageViewController)
+				self.pageViewControler.dataSource = self
+				for (index, branch) in self.viewModel.branches.enumerate() {
+					self.branchViewControllers.append(BranchViewController(branch: branch))
+					self.branchViewControllers.last?.view.backgroundColor = self.viewModel.colors[index]
+				}
+				self.pageViewControler.setViewControllers([self.branchViewControllers[0]], direction: .Forward, animated: true, completion: nil)
+			})
 			
 		}
 		
 		else if segue.identifier == "ChoosingBranchSegue" {
-			print((pageViewControler.viewControllers?.last as! BranchViewController).branch.name)
+			selectedBranchId = (pageViewControler.viewControllers?.last as! BranchViewController).branch.id
 		}
 	}
 	

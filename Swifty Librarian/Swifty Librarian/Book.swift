@@ -11,13 +11,17 @@ struct Book {
 	var title: String
 	var isbn: String
 	var publisher: String
-	var authors: [String]
+	var authors: String
+	var coverUrl: String
+	var pages: String
 	
-	init(title: String, isbn: String, publisher: String, authors: [String]) {
+	init(title: String, isbn: String, publisher: String, authors: String, coverUrl: String, pages: String) {
 		self.title = title
 		self.isbn = isbn
 		self.publisher = publisher
 		self.authors = authors
+		self.coverUrl = coverUrl
+		self.pages = pages
 	}
 	
 }

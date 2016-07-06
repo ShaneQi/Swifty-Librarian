@@ -15,7 +15,7 @@ class LoanCheckInHandler: RequestHandler {
 	
 	func handleRequest(request: WebRequest, response: WebResponse) {
 		
-		guard let paramBookId = request.param("book") else {
+		guard let paramLoanId = request.param("loan"), paramDate = request.param("date") else {
 			let responseString = PerfectHelper.instance.JSONString(withFailureReason: "Bad parameters.")
 			response.appendBodyString(responseString)
 			response.requestCompletedCallback()
@@ -33,27 +33,33 @@ class LoanCheckInHandler: RequestHandler {
 		
 		defer { mysql.close() }
 		
-		let now = NSDate().toString().toDate()
+		let now = paramDate.toDate()
 		var due = NSDate()
-		var loanId = ""
 		var bookId = 0
 		
-		mysql.query("SELECT * FROM book_loans WHERE book_id = \(paramBookId) AND date_in IS NULL;")
+		mysql.query("SELECT * FROM book_loans WHERE loan_id = \(paramLoanId);")
 		mysql.storeResults()?.forEachRow({ row in
 			due = row[4].toDate()
-			loanId = row[0]
 			bookId = Int(row[1])!
 		})
 		
+		var responseDictionary = [String: Any]()
+		responseDictionary["fine"] = false
 		let overDue = now.timeIntervalSinceDate(due)/60/60/24
 		if overDue > 0 {
+			
 			let fine = Double(Int(overDue)) * 0.25
-			mysql.query("INSERT INTO fine (loan_id, fine_amount, paid) VALUES (\(loanId), \(fine), 0);")
+			responseDictionary["fine"] = true
+			responseDictionary["days"] = overDue
+			
+			mysql.query("INSERT INTO fine (loan_id, fine_amount, paid) VALUES (\(paramLoanId), \(fine), 0);")
 		}
 		
 		mysql.query("UPDATE book_loans SET date_in = '\(now.toString())' WHERE book_id = \(bookId);")
 		mysql.query("UPDATE book_copies SET availability=1 WHERE book_id = \(bookId);")
 		
+		let responseString = try! responseDictionary.jsonEncodedString()
+		response.appendBodyString(responseString)
 		response.requestCompletedCallback()
 		
 	}

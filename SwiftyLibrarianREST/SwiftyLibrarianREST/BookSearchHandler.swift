@@ -36,7 +36,7 @@ class BookSearchHandler: RequestHandler{
 		
 		defer { mysql.close() }
 		
-		mysql.query("SELECT * FROM ( SELECT * FROM ( SELECT A.*, GROUP_CONCAT(C.name SEPARATOR ', ') AS author FROM book A, book_authors B, author C WHERE A.isbn = B.isbn AND B.author_id = C.author_id GROUP BY A.isbn ) AS T WHERE author LIKE '%\(searchKeywords)%' OR title LIKE '%\(searchKeywords)%' ) AS TT LIMIT 10 OFFSET \(10*page)");
+		mysql.query("SELECT * FROM ( SELECT * FROM ( SELECT A.*, GROUP_CONCAT(C.name SEPARATOR ', ') AS author FROM book A, book_authors B, author C WHERE A.isbn = B.isbn AND B.author_id = C.author_id GROUP BY A.isbn ) AS T WHERE author LIKE '%\(searchKeywords)%' OR title LIKE '%\(searchKeywords)%' OR isbn LIKE '%\(searchKeywords)%') AS TT LIMIT 10 OFFSET \(10*page)");
 		
 		var responseArray = [Any]()
 		

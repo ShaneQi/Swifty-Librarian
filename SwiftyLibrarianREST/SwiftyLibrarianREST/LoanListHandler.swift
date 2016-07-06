@@ -1,20 +1,20 @@
 //
-//  LoanPaymentHandler.swift
+//  LoanListHandler.swift
 //  SwiftyLibrarianREST
 //
-//  Created by Shane Qi on 7/4/16.
+//  Created by Shane Qi on 7/6/16.
 //  Copyright © 2016 com.github.shaneqi. All rights reserved.
 //
 
 import PerfectLib
 import MySQL
 
-class LoanPaymentHandler: RequestHandler {
-	
-	static let instance = LoanPaymentHandler()
+class LoanListHandler: RequestHandler {
 
+	static let instance = LoanListHandler()
+	
 	func handleRequest(request: WebRequest, response: WebResponse) {
-		guard let paramFineId = request.param("id") else {
+		guard let paramKeyword = request.param("keyword") else {
 			let responseString = PerfectHelper.instance.JSONString(withFailureReason: "Bad parameters.")
 			response.appendBodyString(responseString)
 			response.requestCompletedCallback()
@@ -32,8 +32,21 @@ class LoanPaymentHandler: RequestHandler {
 		
 		defer { mysql.close() }
 		
-		mysql.query("UPDATE fine SET paid = 1 WHERE fine_id = \(paramFineId);")
+		mysql.query("SELECT * FROM book_loans WHERE (card_id = '\(paramKeyword)' OR book_id = '\(paramKeyword)') AND date_in is NULL;")
 		
+		var responseArray = [Any]()
+		
+		mysql.storeResults()?.forEachRow({
+			row in
+			var loan = [String: Any]()
+			loan["loan_id"] = row[0]
+			loan["book_id"] = row[1]
+			loan["card_id"] = row[2]
+			responseArray.append(loan)
+		})
+		
+		let responseString = try! responseArray.jsonEncodedString()
+		response.appendBodyString(responseString)
 		response.requestCompletedCallback()
 		
 	}

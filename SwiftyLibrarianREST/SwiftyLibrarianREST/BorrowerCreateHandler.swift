@@ -46,8 +46,9 @@ class BorrowerCreateHandler: RequestHandler {
 		
 		if insertBorrower {
 			responseDictionary["status"] = true
+			responseDictionary["id"] = cardId
 		} else {
-			responseDictionary["status"] = true
+			responseDictionary["status"] = false
 			responseDictionary["reason"] = mysql.errorMessage()
 		}
 		

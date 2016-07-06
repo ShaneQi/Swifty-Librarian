@@ -12,6 +12,34 @@
 		BF6A41A11D165311007CA1E4 /* Branch.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6A41A01D165311007CA1E4 /* Branch.swift */; };
 		BF6A41A31D165462007CA1E4 /* BranchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6A41A21D165462007CA1E4 /* BranchViewController.swift */; };
 		BF6A41A61D16688B007CA1E4 /* ColorSchema.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6A41A51D16688B007CA1E4 /* ColorSchema.swift */; };
+		BF9D6D171D2C981C0007A3E2 /* APIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9D6D161D2C981C0007A3E2 /* APIHelper.swift */; };
+		BF9D6D1A1D2C9B0C0007A3E2 /* GlobalHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9D6D191D2C9B0C0007A3E2 /* GlobalHelper.swift */; };
+		BF9D6D211D2C9C950007A3E2 /* DLILCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9D6D1E1D2C9C950007A3E2 /* DLILCacheManager.swift */; };
+		BF9D6D221D2C9C950007A3E2 /* DLImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9D6D1F1D2C9C950007A3E2 /* DLImageLoader.swift */; };
+		BF9D6D231D2C9C950007A3E2 /* DLImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9D6D201D2C9C950007A3E2 /* DLImageView.swift */; };
+		BF9D6D251D2C9D1D0007A3E2 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9D6D241D2C9D1D0007A3E2 /* SearchViewModel.swift */; };
+		BF9D6D281D2CAE730007A3E2 /* CheckView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF9D6D261D2CAE730007A3E2 /* CheckView.storyboard */; };
+		BF9D6D2C1D2CAEFD0007A3E2 /* CheckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9D6D2B1D2CAEFD0007A3E2 /* CheckViewController.swift */; };
+		BF9D6D2E1D2CB28B0007A3E2 /* TextFieldCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF9D6D2D1D2CB28B0007A3E2 /* TextFieldCell.xib */; };
+		BF9D6D301D2CB2990007A3E2 /* LabelCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF9D6D2F1D2CB2990007A3E2 /* LabelCell.xib */; };
+		BF9D6D321D2CB2A30007A3E2 /* DatePickerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF9D6D311D2CB2A30007A3E2 /* DatePickerCell.xib */; };
+		BF9D6D341D2CB2BA0007A3E2 /* TextFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9D6D331D2CB2BA0007A3E2 /* TextFieldCell.swift */; };
+		BF9D6D361D2CB2C20007A3E2 /* LabelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9D6D351D2CB2C20007A3E2 /* LabelCell.swift */; };
+		BF9D6D381D2CB2CC0007A3E2 /* DatePickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9D6D371D2CB2CC0007A3E2 /* DatePickerCell.swift */; };
+		BF9D6D3E1D2CB6960007A3E2 /* ButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9D6D3D1D2CB6960007A3E2 /* ButtonCell.swift */; };
+		BF9D6D401D2CB7420007A3E2 /* ButtonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF9D6D3F1D2CB7420007A3E2 /* ButtonCell.xib */; };
+		BF9D6D421D2CC1000007A3E2 /* CheckViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9D6D411D2CC1000007A3E2 /* CheckViewModel.swift */; };
+		BF9D6D4B1D2CDF4A0007A3E2 /* BorrowerView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF9D6D491D2CDF4A0007A3E2 /* BorrowerView.storyboard */; };
+		BF9D6D4E1D2CDF7A0007A3E2 /* BorrowerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9D6D4D1D2CDF7A0007A3E2 /* BorrowerViewController.swift */; };
+		BF9D6D501D2CE0DA0007A3E2 /* BorrowerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9D6D4F1D2CE0DA0007A3E2 /* BorrowerViewModel.swift */; };
+		BF9D6D591D2DA3050007A3E2 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF9D6D581D2DA3050007A3E2 /* RxSwift.framework */; };
+		BF9D6D5A1D2DA3050007A3E2 /* RxSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BF9D6D581D2DA3050007A3E2 /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BF9D6D5C1D2DA30A0007A3E2 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF9D6D5B1D2DA30A0007A3E2 /* RxCocoa.framework */; };
+		BF9D6D5D1D2DA30A0007A3E2 /* RxCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BF9D6D5B1D2DA30A0007A3E2 /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BF9D6D5F1D2DA30E0007A3E2 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF9D6D5E1D2DA30E0007A3E2 /* Alamofire.framework */; };
+		BF9D6D601D2DA30E0007A3E2 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BF9D6D5E1D2DA30E0007A3E2 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BF9D6D621D2DA3160007A3E2 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF9D6D611D2DA3160007A3E2 /* SwiftyJSON.framework */; };
+		BF9D6D631D2DA3160007A3E2 /* SwiftyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BF9D6D611D2DA3160007A3E2 /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BFCD93AF1D150C370044E496 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCD93AE1D150C370044E496 /* AppDelegate.swift */; };
 		BFCD93B11D150C370044E496 /* IndexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCD93B01D150C370044E496 /* IndexViewController.swift */; };
 		BFCD93B41D150C370044E496 /* IndexView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFCD93B21D150C370044E496 /* IndexView.storyboard */; };
@@ -45,12 +73,53 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		BFA4C6551D2C962D0098B312 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				BF9D6D631D2DA3160007A3E2 /* SwiftyJSON.framework in Embed Frameworks */,
+				BF9D6D5D1D2DA30A0007A3E2 /* RxCocoa.framework in Embed Frameworks */,
+				BF9D6D601D2DA30E0007A3E2 /* Alamofire.framework in Embed Frameworks */,
+				BF9D6D5A1D2DA3050007A3E2 /* RxSwift.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		BF6A419C1D15D212007CA1E4 /* BranchView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BranchView.xib; sourceTree = "<group>"; };
 		BF6A419E1D1650FC007CA1E4 /* IndexViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndexViewModel.swift; sourceTree = "<group>"; };
 		BF6A41A01D165311007CA1E4 /* Branch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Branch.swift; sourceTree = "<group>"; };
 		BF6A41A21D165462007CA1E4 /* BranchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BranchViewController.swift; sourceTree = "<group>"; };
 		BF6A41A51D16688B007CA1E4 /* ColorSchema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorSchema.swift; sourceTree = "<group>"; };
+		BF9D6D161D2C981C0007A3E2 /* APIHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIHelper.swift; sourceTree = "<group>"; };
+		BF9D6D191D2C9B0C0007A3E2 /* GlobalHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalHelper.swift; sourceTree = "<group>"; };
+		BF9D6D1E1D2C9C950007A3E2 /* DLILCacheManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DLILCacheManager.swift; path = ../../DLImageLoader/DLImageLoader/DLILCacheManager.swift; sourceTree = "<group>"; };
+		BF9D6D1F1D2C9C950007A3E2 /* DLImageLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DLImageLoader.swift; path = ../../DLImageLoader/DLImageLoader/DLImageLoader.swift; sourceTree = "<group>"; };
+		BF9D6D201D2C9C950007A3E2 /* DLImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DLImageView.swift; path = ../../DLImageLoader/DLImageLoader/DLImageView.swift; sourceTree = "<group>"; };
+		BF9D6D241D2C9D1D0007A3E2 /* SearchViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		BF9D6D271D2CAE730007A3E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/CheckView.storyboard; sourceTree = "<group>"; };
+		BF9D6D2B1D2CAEFD0007A3E2 /* CheckViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckViewController.swift; sourceTree = "<group>"; };
+		BF9D6D2D1D2CB28B0007A3E2 /* TextFieldCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TextFieldCell.xib; sourceTree = "<group>"; };
+		BF9D6D2F1D2CB2990007A3E2 /* LabelCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LabelCell.xib; sourceTree = "<group>"; };
+		BF9D6D311D2CB2A30007A3E2 /* DatePickerCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DatePickerCell.xib; sourceTree = "<group>"; };
+		BF9D6D331D2CB2BA0007A3E2 /* TextFieldCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldCell.swift; sourceTree = "<group>"; };
+		BF9D6D351D2CB2C20007A3E2 /* LabelCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelCell.swift; sourceTree = "<group>"; };
+		BF9D6D371D2CB2CC0007A3E2 /* DatePickerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerCell.swift; sourceTree = "<group>"; };
+		BF9D6D3D1D2CB6960007A3E2 /* ButtonCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonCell.swift; sourceTree = "<group>"; };
+		BF9D6D3F1D2CB7420007A3E2 /* ButtonCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ButtonCell.xib; sourceTree = "<group>"; };
+		BF9D6D411D2CC1000007A3E2 /* CheckViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckViewModel.swift; sourceTree = "<group>"; };
+		BF9D6D4A1D2CDF4A0007A3E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/BorrowerView.storyboard; sourceTree = "<group>"; };
+		BF9D6D4D1D2CDF7A0007A3E2 /* BorrowerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorrowerViewController.swift; sourceTree = "<group>"; };
+		BF9D6D4F1D2CE0DA0007A3E2 /* BorrowerViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorrowerViewModel.swift; sourceTree = "<group>"; };
+		BF9D6D581D2DA3050007A3E2 /* RxSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = RxSwift.framework; path = "/Users/Shadow/Library/Developer/Xcode/DerivedData/Swifty-Librarian-gzqewftotnlqtudquqeurxllaquk/Build/Products/Debug-iphoneos/RxSwift.framework"; sourceTree = "<absolute>"; };
+		BF9D6D5B1D2DA30A0007A3E2 /* RxCocoa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = RxCocoa.framework; path = "/Users/Shadow/Library/Developer/Xcode/DerivedData/Swifty-Librarian-gzqewftotnlqtudquqeurxllaquk/Build/Products/Debug-iphoneos/RxCocoa.framework"; sourceTree = "<absolute>"; };
+		BF9D6D5E1D2DA30E0007A3E2 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = Alamofire.framework; path = "/Users/Shadow/Library/Developer/Xcode/DerivedData/Swifty-Librarian-gzqewftotnlqtudquqeurxllaquk/Build/Products/Debug-iphoneos/Alamofire.framework"; sourceTree = "<absolute>"; };
+		BF9D6D611D2DA3160007A3E2 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = SwiftyJSON.framework; path = "/Users/Shadow/Library/Developer/Xcode/DerivedData/Swifty-Librarian-gzqewftotnlqtudquqeurxllaquk/Build/Products/Debug-iphoneos/SwiftyJSON.framework"; sourceTree = "<absolute>"; };
 		BFCD93AB1D150C370044E496 /* Swifty Librarian.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swifty Librarian.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFCD93AE1D150C370044E496 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BFCD93B01D150C370044E496 /* IndexViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexViewController.swift; sourceTree = "<group>"; };
@@ -78,6 +147,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF9D6D621D2DA3160007A3E2 /* SwiftyJSON.framework in Frameworks */,
+				BF9D6D5C1D2DA30A0007A3E2 /* RxCocoa.framework in Frameworks */,
+				BF9D6D5F1D2DA30E0007A3E2 /* Alamofire.framework in Frameworks */,
+				BF9D6D591D2DA3050007A3E2 /* RxSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,9 +205,105 @@
 			name = MasterViewContoller;
 			sourceTree = "<group>";
 		};
+		BF9D6D181D2C9AFE0007A3E2 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				BF6A41A51D16688B007CA1E4 /* ColorSchema.swift */,
+				BF9D6D161D2C981C0007A3E2 /* APIHelper.swift */,
+				BF9D6D191D2C9B0C0007A3E2 /* GlobalHelper.swift */,
+			);
+			name = Helper;
+			sourceTree = "<group>";
+		};
+		BF9D6D1D1D2C9C850007A3E2 /* DLImageLoader */ = {
+			isa = PBXGroup;
+			children = (
+				BF9D6D1E1D2C9C950007A3E2 /* DLILCacheManager.swift */,
+				BF9D6D1F1D2C9C950007A3E2 /* DLImageLoader.swift */,
+				BF9D6D201D2C9C950007A3E2 /* DLImageView.swift */,
+			);
+			name = DLImageLoader;
+			sourceTree = "<group>";
+		};
+		BF9D6D291D2CAE770007A3E2 /* CheckView */ = {
+			isa = PBXGroup;
+			children = (
+				BF9D6D261D2CAE730007A3E2 /* CheckView.storyboard */,
+				BF9D6D391D2CB2FB0007A3E2 /* TextFieldCell */,
+				BF9D6D3A1D2CB3010007A3E2 /* LabelCell */,
+				BF9D6D3B1D2CB3080007A3E2 /* DatePickerCell */,
+				BF9D6D3C1D2CB6880007A3E2 /* ButtonCell */,
+			);
+			name = CheckView;
+			sourceTree = "<group>";
+		};
+		BF9D6D2A1D2CAEED0007A3E2 /* CheckViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BF9D6D2B1D2CAEFD0007A3E2 /* CheckViewController.swift */,
+			);
+			name = CheckViewController;
+			sourceTree = "<group>";
+		};
+		BF9D6D391D2CB2FB0007A3E2 /* TextFieldCell */ = {
+			isa = PBXGroup;
+			children = (
+				BF9D6D2D1D2CB28B0007A3E2 /* TextFieldCell.xib */,
+				BF9D6D331D2CB2BA0007A3E2 /* TextFieldCell.swift */,
+			);
+			name = TextFieldCell;
+			sourceTree = "<group>";
+		};
+		BF9D6D3A1D2CB3010007A3E2 /* LabelCell */ = {
+			isa = PBXGroup;
+			children = (
+				BF9D6D2F1D2CB2990007A3E2 /* LabelCell.xib */,
+				BF9D6D351D2CB2C20007A3E2 /* LabelCell.swift */,
+			);
+			name = LabelCell;
+			sourceTree = "<group>";
+		};
+		BF9D6D3B1D2CB3080007A3E2 /* DatePickerCell */ = {
+			isa = PBXGroup;
+			children = (
+				BF9D6D311D2CB2A30007A3E2 /* DatePickerCell.xib */,
+				BF9D6D371D2CB2CC0007A3E2 /* DatePickerCell.swift */,
+			);
+			name = DatePickerCell;
+			sourceTree = "<group>";
+		};
+		BF9D6D3C1D2CB6880007A3E2 /* ButtonCell */ = {
+			isa = PBXGroup;
+			children = (
+				BF9D6D3D1D2CB6960007A3E2 /* ButtonCell.swift */,
+				BF9D6D3F1D2CB7420007A3E2 /* ButtonCell.xib */,
+			);
+			name = ButtonCell;
+			sourceTree = "<group>";
+		};
+		BF9D6D4C1D2CDF510007A3E2 /* BorrowerView */ = {
+			isa = PBXGroup;
+			children = (
+				BF9D6D491D2CDF4A0007A3E2 /* BorrowerView.storyboard */,
+			);
+			name = BorrowerView;
+			sourceTree = "<group>";
+		};
+		BF9D6D511D2CE17D0007A3E2 /* BorrowerViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BF9D6D4D1D2CDF7A0007A3E2 /* BorrowerViewController.swift */,
+			);
+			name = BorrowerViewController;
+			sourceTree = "<group>";
+		};
 		BFCD93A21D150C370044E496 = {
 			isa = PBXGroup;
 			children = (
+				BF9D6D611D2DA3160007A3E2 /* SwiftyJSON.framework */,
+				BF9D6D5E1D2DA30E0007A3E2 /* Alamofire.framework */,
+				BF9D6D5B1D2DA30A0007A3E2 /* RxCocoa.framework */,
+				BF9D6D581D2DA3050007A3E2 /* RxSwift.framework */,
 				BFCD93AD1D150C370044E496 /* Swifty Librarian */,
 				BFCD93C51D150C370044E496 /* Swifty LibrarianTests */,
 				BFCD93D01D150C370044E496 /* Swifty LibrarianUITests */,
@@ -155,8 +324,9 @@
 		BFCD93AD1D150C370044E496 /* Swifty Librarian */ = {
 			isa = PBXGroup;
 			children = (
-				BF6A41A51D16688B007CA1E4 /* ColorSchema.swift */,
 				BFD008A11D151729008537CF /* Support */,
+				BF9D6D1D1D2C9C850007A3E2 /* DLImageLoader */,
+				BF9D6D181D2C9AFE0007A3E2 /* Helper */,
 				BFD008A51D151756008537CF /* Model */,
 				BFD008A41D15174B008537CF /* ViewModel */,
 				BFD008A31D151747008537CF /* ViewController */,
@@ -201,6 +371,8 @@
 				BF6A419B1D15D201007CA1E4 /* IndexView */,
 				BF6A41A71D1669BC007CA1E4 /* MasterView */,
 				BFD0C7471D2070350031339E /* SearchView */,
+				BF9D6D291D2CAE770007A3E2 /* CheckView */,
+				BF9D6D4C1D2CDF510007A3E2 /* BorrowerView */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -211,6 +383,8 @@
 				BF6A41A41D16546A007CA1E4 /* IndexViewController */,
 				BF6A41AA1D166B3E007CA1E4 /* MasterViewContoller */,
 				BFD0C7481D2070A60031339E /* SearchViewController */,
+				BF9D6D2A1D2CAEED0007A3E2 /* CheckViewController */,
+				BF9D6D511D2CE17D0007A3E2 /* BorrowerViewController */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -219,6 +393,9 @@
 			isa = PBXGroup;
 			children = (
 				BF6A419E1D1650FC007CA1E4 /* IndexViewModel.swift */,
+				BF9D6D241D2C9D1D0007A3E2 /* SearchViewModel.swift */,
+				BF9D6D411D2CC1000007A3E2 /* CheckViewModel.swift */,
+				BF9D6D4F1D2CE0DA0007A3E2 /* BorrowerViewModel.swift */,
 			);
 			name = ViewModel;
 			sourceTree = "<group>";
@@ -259,6 +436,7 @@
 				BFCD93A71D150C370044E496 /* Sources */,
 				BFCD93A81D150C370044E496 /* Frameworks */,
 				BFCD93A91D150C370044E496 /* Resources */,
+				BFA4C6551D2C962D0098B312 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -317,6 +495,7 @@
 				TargetAttributes = {
 					BFCD93AA1D150C370044E496 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = T284UZDTGP;
 					};
 					BFCD93C11D150C370044E496 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -353,10 +532,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF9D6D281D2CAE730007A3E2 /* CheckView.storyboard in Resources */,
+				BF9D6D301D2CB2990007A3E2 /* LabelCell.xib in Resources */,
 				BF6A419D1D15D212007CA1E4 /* BranchView.xib in Resources */,
 				BFCD93BC1D150C370044E496 /* LaunchScreen.storyboard in Resources */,
+				BF9D6D2E1D2CB28B0007A3E2 /* TextFieldCell.xib in Resources */,
+				BF9D6D401D2CB7420007A3E2 /* ButtonCell.xib in Resources */,
 				BFD008AA1D15198D008537CF /* SearchView.storyboard in Resources */,
+				BF9D6D4B1D2CDF4A0007A3E2 /* BorrowerView.storyboard in Resources */,
 				BFCD93B91D150C370044E496 /* Assets.xcassets in Resources */,
+				BF9D6D321D2CB2A30007A3E2 /* DatePickerCell.xib in Resources */,
 				BFCD93B41D150C370044E496 /* IndexView.storyboard in Resources */,
 				BFD008A71D151949008537CF /* MasterView.storyboard in Resources */,
 			);
@@ -383,17 +568,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF9D6D501D2CE0DA0007A3E2 /* BorrowerViewModel.swift in Sources */,
+				BF9D6D171D2C981C0007A3E2 /* APIHelper.swift in Sources */,
 				BFD0C74A1D2076980031339E /* SearchCell.swift in Sources */,
 				BFD008B01D1519CC008537CF /* SearchViewController.swift in Sources */,
 				BF6A41A61D16688B007CA1E4 /* ColorSchema.swift in Sources */,
+				BF9D6D221D2C9C950007A3E2 /* DLImageLoader.swift in Sources */,
 				BFD008AC1D1519B7008537CF /* MasterViewController.swift in Sources */,
+				BF9D6D361D2CB2C20007A3E2 /* LabelCell.swift in Sources */,
 				BF6A41A31D165462007CA1E4 /* BranchViewController.swift in Sources */,
+				BF9D6D1A1D2C9B0C0007A3E2 /* GlobalHelper.swift in Sources */,
 				BF6A419F1D1650FC007CA1E4 /* IndexViewModel.swift in Sources */,
 				BFCD93B11D150C370044E496 /* IndexViewController.swift in Sources */,
+				BF9D6D231D2C9C950007A3E2 /* DLImageView.swift in Sources */,
+				BF9D6D211D2C9C950007A3E2 /* DLILCacheManager.swift in Sources */,
 				BFD0C74C1D2077930031339E /* Book.swift in Sources */,
+				BF9D6D341D2CB2BA0007A3E2 /* TextFieldCell.swift in Sources */,
 				BFCD93AF1D150C370044E496 /* AppDelegate.swift in Sources */,
+				BF9D6D4E1D2CDF7A0007A3E2 /* BorrowerViewController.swift in Sources */,
+				BF9D6D251D2C9D1D0007A3E2 /* SearchViewModel.swift in Sources */,
+				BF9D6D2C1D2CAEFD0007A3E2 /* CheckViewController.swift in Sources */,
 				BFCD93B71D150C370044E496 /* Swifty_Librarian.xcdatamodeld in Sources */,
+				BF9D6D421D2CC1000007A3E2 /* CheckViewModel.swift in Sources */,
+				BF9D6D3E1D2CB6960007A3E2 /* ButtonCell.swift in Sources */,
 				BF6A41A11D165311007CA1E4 /* Branch.swift in Sources */,
+				BF9D6D381D2CB2CC0007A3E2 /* DatePickerCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,6 +628,22 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		BF9D6D261D2CAE730007A3E2 /* CheckView.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF9D6D271D2CAE730007A3E2 /* Base */,
+			);
+			name = CheckView.storyboard;
+			sourceTree = "<group>";
+		};
+		BF9D6D491D2CDF4A0007A3E2 /* BorrowerView.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF9D6D4A1D2CDF4A0007A3E2 /* Base */,
+			);
+			name = BorrowerView.storyboard;
+			sourceTree = "<group>";
+		};
 		BFCD93B21D150C370044E496 /* IndexView.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -545,11 +760,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Swifty Librarian/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.github.shaneqi.Swifty-Librarian";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -557,11 +775,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Swifty Librarian/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.github.shaneqi.Swifty-Librarian";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
