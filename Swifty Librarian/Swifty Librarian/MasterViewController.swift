@@ -16,7 +16,7 @@ class MasterViewController: UIViewController {
 		[
 			"Books",
 			"Checking In/Out",
-			"Fine",
+			"Borrower Fine",
 			"Signup"
 			],
 		[

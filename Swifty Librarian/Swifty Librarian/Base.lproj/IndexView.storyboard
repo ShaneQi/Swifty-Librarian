@@ -110,6 +110,7 @@
                         <segue destination="o5v-LU-EvN" kind="relationship" relationship="viewControllers" id="8OL-Ge-sVa"/>
                         <segue destination="Sg1-NR-l6s" kind="relationship" relationship="viewControllers" id="Wgn-R0-b1k"/>
                         <segue destination="zIZ-u7-51f" kind="relationship" relationship="viewControllers" id="XFd-p1-EWe"/>
+                        <segue destination="fYO-H1-KZD" kind="relationship" relationship="viewControllers" id="b65-sx-vqZ"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CuY-jW-77P" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -144,7 +145,17 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PxV-2c-JDj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1105.5" y="2645"/>
+            <point key="canvasLocation" x="-943.5" y="2015"/>
+        </scene>
+        <!--SignupView-->
+        <scene sceneID="Rjv-Q2-VyL">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SignupView" id="fYO-H1-KZD" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="gos-iU-3JP"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zFO-0x-k8k" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1464.5" y="2453"/>
         </scene>
     </scenes>
 </document>
