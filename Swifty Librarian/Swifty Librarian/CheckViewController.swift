@@ -74,12 +74,12 @@ extension CheckViewController: UITableViewDataSource {
 			if tableView == inTableView {
 				self.viewModel.checkinDateString.asObservable().subscribeNext({
 					nextString in
-					cell.label.text = nextString
+					cell.label.text = "Check-in date: " + nextString
 				}).addDisposableTo(viewModel.disposeBag)
 			} else {
 				self.viewModel.checkoutDateString.asObservable().subscribeNext({
 					nextString in
-					cell.label.text = nextString
+					cell.label.text = "Check-out date: " + nextString
 				}).addDisposableTo(viewModel.disposeBag)
 			}
 			
@@ -101,6 +101,7 @@ extension CheckViewController: UITableViewDataSource {
 		case (1, 0):
 			let cell = tableView.dequeueReusableCellWithIdentifier("ButtonCell") as! ButtonCell
 			if tableView == inTableView {
+				cell.button.setTitle("Check-in", forState: .Normal)
 				cell.button.rx_tap.subscribeNext({
 					self.viewModel.performCheckin({
 						_ in
@@ -112,6 +113,7 @@ extension CheckViewController: UITableViewDataSource {
 					
 				}).addDisposableTo(viewModel.disposeBag)
 			} else {
+				cell.button.setTitle("Check-out", forState: .Normal)
 				cell.button.rx_tap.subscribeNext({
 					self.viewModel.performCheckout({
 						status in
