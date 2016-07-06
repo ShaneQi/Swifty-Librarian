@@ -16,7 +16,8 @@ class MasterViewController: UIViewController {
 		[
 			"Books",
 			"Checking In/Out",
-			"Borrowers"
+			"Fine",
+			"Signup"
 			],
 		[
 			"Back"
@@ -64,6 +65,10 @@ extension MasterViewController: UITableViewDelegate {
 			tabBarController.selectedIndex = 0
 		case (0, 1):
 			tabBarController.selectedIndex = 1
+		case (0, 2):
+			tabBarController.selectedIndex = 2
+		case (0, 3):
+			break
 		default:
 			break
 		}

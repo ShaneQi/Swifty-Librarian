@@ -109,6 +109,7 @@
                     <connections>
                         <segue destination="o5v-LU-EvN" kind="relationship" relationship="viewControllers" id="8OL-Ge-sVa"/>
                         <segue destination="Sg1-NR-l6s" kind="relationship" relationship="viewControllers" id="Wgn-R0-b1k"/>
+                        <segue destination="zIZ-u7-51f" kind="relationship" relationship="viewControllers" id="XFd-p1-EWe"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CuY-jW-77P" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -133,7 +134,17 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mLt-EN-w7R" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-684.5" y="2513"/>
+            <point key="canvasLocation" x="-297" y="2043"/>
+        </scene>
+        <!--BorrowerView-->
+        <scene sceneID="HhQ-sl-Bdc">
+            <objects>
+                <viewControllerPlaceholder storyboardName="BorrowerView" id="zIZ-u7-51f" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="8sM-rS-U5A"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PxV-2c-JDj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1105.5" y="2645"/>
         </scene>
     </scenes>
 </document>

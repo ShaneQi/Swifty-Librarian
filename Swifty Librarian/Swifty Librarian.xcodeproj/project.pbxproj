@@ -33,6 +33,9 @@
 		BF9D6D451D2CC3700007A3E2 /* RxSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BF9D6D431D2CC3700007A3E2 /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BF9D6D471D2CC3750007A3E2 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF9D6D461D2CC3750007A3E2 /* RxCocoa.framework */; };
 		BF9D6D481D2CC3750007A3E2 /* RxCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BF9D6D461D2CC3750007A3E2 /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BF9D6D4B1D2CDF4A0007A3E2 /* BorrowerView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF9D6D491D2CDF4A0007A3E2 /* BorrowerView.storyboard */; };
+		BF9D6D4E1D2CDF7A0007A3E2 /* BorrowerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9D6D4D1D2CDF7A0007A3E2 /* BorrowerViewController.swift */; };
+		BF9D6D501D2CE0DA0007A3E2 /* BorrowerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9D6D4F1D2CE0DA0007A3E2 /* BorrowerViewModel.swift */; };
 		BFA4C6531D2C962C0098B312 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFA4C6521D2C962C0098B312 /* Alamofire.framework */; };
 		BFA4C6541D2C962C0098B312 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BFA4C6521D2C962C0098B312 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BFA4C6571D2C96330098B312 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFA4C6561D2C96330098B312 /* SwiftyJSON.framework */; };
@@ -112,6 +115,9 @@
 		BF9D6D411D2CC1000007A3E2 /* CheckViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckViewModel.swift; sourceTree = "<group>"; };
 		BF9D6D431D2CC3700007A3E2 /* RxSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = RxSwift.framework; path = "/Users/Shadow/Library/Developer/Xcode/DerivedData/Swifty-Librarian-gzqewftotnlqtudquqeurxllaquk/Build/Products/Debug-iphonesimulator/RxSwift.framework"; sourceTree = "<absolute>"; };
 		BF9D6D461D2CC3750007A3E2 /* RxCocoa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = RxCocoa.framework; path = "/Users/Shadow/Library/Developer/Xcode/DerivedData/Swifty-Librarian-gzqewftotnlqtudquqeurxllaquk/Build/Products/Debug-iphonesimulator/RxCocoa.framework"; sourceTree = "<absolute>"; };
+		BF9D6D4A1D2CDF4A0007A3E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/BorrowerView.storyboard; sourceTree = "<group>"; };
+		BF9D6D4D1D2CDF7A0007A3E2 /* BorrowerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorrowerViewController.swift; sourceTree = "<group>"; };
+		BF9D6D4F1D2CE0DA0007A3E2 /* BorrowerViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorrowerViewModel.swift; sourceTree = "<group>"; };
 		BFA4C6521D2C962C0098B312 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = Alamofire.framework; path = "/Users/Shadow/Library/Developer/Xcode/DerivedData/Swifty-Librarian-gzqewftotnlqtudquqeurxllaquk/Build/Products/Debug-iphonesimulator/Alamofire.framework"; sourceTree = "<absolute>"; };
 		BFA4C6561D2C96330098B312 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = SwiftyJSON.framework; path = "/Users/Shadow/Library/Developer/Xcode/DerivedData/Swifty-Librarian-gzqewftotnlqtudquqeurxllaquk/Build/Products/Debug-iphonesimulator/SwiftyJSON.framework"; sourceTree = "<absolute>"; };
 		BFCD93AB1D150C370044E496 /* Swifty Librarian.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swifty Librarian.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -275,6 +281,22 @@
 			name = ButtonCell;
 			sourceTree = "<group>";
 		};
+		BF9D6D4C1D2CDF510007A3E2 /* BorrowerView */ = {
+			isa = PBXGroup;
+			children = (
+				BF9D6D491D2CDF4A0007A3E2 /* BorrowerView.storyboard */,
+			);
+			name = BorrowerView;
+			sourceTree = "<group>";
+		};
+		BF9D6D511D2CE17D0007A3E2 /* BorrowerViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BF9D6D4D1D2CDF7A0007A3E2 /* BorrowerViewController.swift */,
+			);
+			name = BorrowerViewController;
+			sourceTree = "<group>";
+		};
 		BFCD93A21D150C370044E496 = {
 			isa = PBXGroup;
 			children = (
@@ -350,6 +372,7 @@
 				BF6A41A71D1669BC007CA1E4 /* MasterView */,
 				BFD0C7471D2070350031339E /* SearchView */,
 				BF9D6D291D2CAE770007A3E2 /* CheckView */,
+				BF9D6D4C1D2CDF510007A3E2 /* BorrowerView */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -361,6 +384,7 @@
 				BF6A41AA1D166B3E007CA1E4 /* MasterViewContoller */,
 				BFD0C7481D2070A60031339E /* SearchViewController */,
 				BF9D6D2A1D2CAEED0007A3E2 /* CheckViewController */,
+				BF9D6D511D2CE17D0007A3E2 /* BorrowerViewController */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -371,6 +395,7 @@
 				BF6A419E1D1650FC007CA1E4 /* IndexViewModel.swift */,
 				BF9D6D241D2C9D1D0007A3E2 /* SearchViewModel.swift */,
 				BF9D6D411D2CC1000007A3E2 /* CheckViewModel.swift */,
+				BF9D6D4F1D2CE0DA0007A3E2 /* BorrowerViewModel.swift */,
 			);
 			name = ViewModel;
 			sourceTree = "<group>";
@@ -513,6 +538,7 @@
 				BF9D6D2E1D2CB28B0007A3E2 /* TextFieldCell.xib in Resources */,
 				BF9D6D401D2CB7420007A3E2 /* ButtonCell.xib in Resources */,
 				BFD008AA1D15198D008537CF /* SearchView.storyboard in Resources */,
+				BF9D6D4B1D2CDF4A0007A3E2 /* BorrowerView.storyboard in Resources */,
 				BFCD93B91D150C370044E496 /* Assets.xcassets in Resources */,
 				BF9D6D321D2CB2A30007A3E2 /* DatePickerCell.xib in Resources */,
 				BFCD93B41D150C370044E496 /* IndexView.storyboard in Resources */,
@@ -541,6 +567,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF9D6D501D2CE0DA0007A3E2 /* BorrowerViewModel.swift in Sources */,
 				BF9D6D171D2C981C0007A3E2 /* APIHelper.swift in Sources */,
 				BFD0C74A1D2076980031339E /* SearchCell.swift in Sources */,
 				BFD008B01D1519CC008537CF /* SearchViewController.swift in Sources */,
@@ -557,6 +584,7 @@
 				BFD0C74C1D2077930031339E /* Book.swift in Sources */,
 				BF9D6D341D2CB2BA0007A3E2 /* TextFieldCell.swift in Sources */,
 				BFCD93AF1D150C370044E496 /* AppDelegate.swift in Sources */,
+				BF9D6D4E1D2CDF7A0007A3E2 /* BorrowerViewController.swift in Sources */,
 				BF9D6D251D2C9D1D0007A3E2 /* SearchViewModel.swift in Sources */,
 				BF9D6D2C1D2CAEFD0007A3E2 /* CheckViewController.swift in Sources */,
 				BFCD93B71D150C370044E496 /* Swifty_Librarian.xcdatamodeld in Sources */,
@@ -605,6 +633,14 @@
 				BF9D6D271D2CAE730007A3E2 /* Base */,
 			);
 			name = CheckView.storyboard;
+			sourceTree = "<group>";
+		};
+		BF9D6D491D2CDF4A0007A3E2 /* BorrowerView.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF9D6D4A1D2CDF4A0007A3E2 /* Base */,
+			);
+			name = BorrowerView.storyboard;
 			sourceTree = "<group>";
 		};
 		BFCD93B21D150C370044E496 /* IndexView.storyboard */ = {
