@@ -4,6 +4,7 @@
 
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "01CF9A3A589543EF7C54AE39989B993FF728122B" : 0,
     "8B123162C394A0A0A138779108E4C59DD771865A" : 0,
     "A9F18E68B09CC87F54A7B6BE0DF87F9CB8C06258" : 0,
     "E2306DAE0C98D148736A05084B6FAB44F03B4909" : 0,
@@ -12,6 +13,7 @@
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "C4F3AB0E-40B0-44B1-BBE1-B2AEB1F8E324",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "01CF9A3A589543EF7C54AE39989B993FF728122B" : "Swifty-Librarian\/DLImageLoader\/",
     "8B123162C394A0A0A138779108E4C59DD771865A" : "Swifty-Librarian\/RxSwift\/",
     "A9F18E68B09CC87F54A7B6BE0DF87F9CB8C06258" : "Swifty-Librarian\/",
     "E2306DAE0C98D148736A05084B6FAB44F03B4909" : "Swifty-Librarian\/Perfect\/",
@@ -22,6 +24,11 @@
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,
   "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Swifty-Librarian.xcworkspace",
   "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/AndreyLunevich\/DLImageLoader-iOS.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "01CF9A3A589543EF7C54AE39989B993FF728122B"
+    },
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Alamofire\/Alamofire.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",

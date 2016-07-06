@@ -10,3 +10,6 @@
 [submodule "SwiftyJSON"]
 	path = SwiftyJSON
 	url = https://@github.com/SwiftyJSON/SwiftyJSON.git
+[submodule "DLImageLoader"]
+	path = DLImageLoader
+	url = https://github.com/AndreyLunevich/DLImageLoader-iOS.git

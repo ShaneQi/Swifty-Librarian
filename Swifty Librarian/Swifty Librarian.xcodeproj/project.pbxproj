@@ -14,6 +14,9 @@
 		BF6A41A61D16688B007CA1E4 /* ColorSchema.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6A41A51D16688B007CA1E4 /* ColorSchema.swift */; };
 		BF9D6D171D2C981C0007A3E2 /* APIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9D6D161D2C981C0007A3E2 /* APIHelper.swift */; };
 		BF9D6D1A1D2C9B0C0007A3E2 /* GlobalHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9D6D191D2C9B0C0007A3E2 /* GlobalHelper.swift */; };
+		BF9D6D211D2C9C950007A3E2 /* DLILCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9D6D1E1D2C9C950007A3E2 /* DLILCacheManager.swift */; };
+		BF9D6D221D2C9C950007A3E2 /* DLImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9D6D1F1D2C9C950007A3E2 /* DLImageLoader.swift */; };
+		BF9D6D231D2C9C950007A3E2 /* DLImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9D6D201D2C9C950007A3E2 /* DLImageView.swift */; };
 		BFA4C6531D2C962C0098B312 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFA4C6521D2C962C0098B312 /* Alamofire.framework */; };
 		BFA4C6541D2C962C0098B312 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BFA4C6521D2C962C0098B312 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BFA4C6571D2C96330098B312 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFA4C6561D2C96330098B312 /* SwiftyJSON.framework */; };
@@ -74,6 +77,9 @@
 		BF6A41A51D16688B007CA1E4 /* ColorSchema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorSchema.swift; sourceTree = "<group>"; };
 		BF9D6D161D2C981C0007A3E2 /* APIHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIHelper.swift; sourceTree = "<group>"; };
 		BF9D6D191D2C9B0C0007A3E2 /* GlobalHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalHelper.swift; sourceTree = "<group>"; };
+		BF9D6D1E1D2C9C950007A3E2 /* DLILCacheManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DLILCacheManager.swift; path = ../../DLImageLoader/DLImageLoader/DLILCacheManager.swift; sourceTree = "<group>"; };
+		BF9D6D1F1D2C9C950007A3E2 /* DLImageLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DLImageLoader.swift; path = ../../DLImageLoader/DLImageLoader/DLImageLoader.swift; sourceTree = "<group>"; };
+		BF9D6D201D2C9C950007A3E2 /* DLImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DLImageView.swift; path = ../../DLImageLoader/DLImageLoader/DLImageView.swift; sourceTree = "<group>"; };
 		BFA4C6521D2C962C0098B312 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = Alamofire.framework; path = "/Users/Shadow/Library/Developer/Xcode/DerivedData/Swifty-Librarian-gzqewftotnlqtudquqeurxllaquk/Build/Products/Debug-iphonesimulator/Alamofire.framework"; sourceTree = "<absolute>"; };
 		BFA4C6561D2C96330098B312 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = SwiftyJSON.framework; path = "/Users/Shadow/Library/Developer/Xcode/DerivedData/Swifty-Librarian-gzqewftotnlqtudquqeurxllaquk/Build/Products/Debug-iphonesimulator/SwiftyJSON.framework"; sourceTree = "<absolute>"; };
 		BFCD93AB1D150C370044E496 /* Swifty Librarian.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swifty Librarian.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -162,10 +168,21 @@
 		BF9D6D181D2C9AFE0007A3E2 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				BF6A41A51D16688B007CA1E4 /* ColorSchema.swift */,
 				BF9D6D161D2C981C0007A3E2 /* APIHelper.swift */,
 				BF9D6D191D2C9B0C0007A3E2 /* GlobalHelper.swift */,
 			);
 			name = Helper;
+			sourceTree = "<group>";
+		};
+		BF9D6D1D1D2C9C850007A3E2 /* DLImageLoader */ = {
+			isa = PBXGroup;
+			children = (
+				BF9D6D1E1D2C9C950007A3E2 /* DLILCacheManager.swift */,
+				BF9D6D1F1D2C9C950007A3E2 /* DLImageLoader.swift */,
+				BF9D6D201D2C9C950007A3E2 /* DLImageView.swift */,
+			);
+			name = DLImageLoader;
 			sourceTree = "<group>";
 		};
 		BFCD93A21D150C370044E496 = {
@@ -193,8 +210,8 @@
 		BFCD93AD1D150C370044E496 /* Swifty Librarian */ = {
 			isa = PBXGroup;
 			children = (
-				BF6A41A51D16688B007CA1E4 /* ColorSchema.swift */,
 				BFD008A11D151729008537CF /* Support */,
+				BF9D6D1D1D2C9C850007A3E2 /* DLImageLoader */,
 				BF9D6D181D2C9AFE0007A3E2 /* Helper */,
 				BFD008A51D151756008537CF /* Model */,
 				BFD008A41D15174B008537CF /* ViewModel */,
@@ -427,11 +444,14 @@
 				BFD0C74A1D2076980031339E /* SearchCell.swift in Sources */,
 				BFD008B01D1519CC008537CF /* SearchViewController.swift in Sources */,
 				BF6A41A61D16688B007CA1E4 /* ColorSchema.swift in Sources */,
+				BF9D6D221D2C9C950007A3E2 /* DLImageLoader.swift in Sources */,
 				BFD008AC1D1519B7008537CF /* MasterViewController.swift in Sources */,
 				BF6A41A31D165462007CA1E4 /* BranchViewController.swift in Sources */,
 				BF9D6D1A1D2C9B0C0007A3E2 /* GlobalHelper.swift in Sources */,
 				BF6A419F1D1650FC007CA1E4 /* IndexViewModel.swift in Sources */,
 				BFCD93B11D150C370044E496 /* IndexViewController.swift in Sources */,
+				BF9D6D231D2C9C950007A3E2 /* DLImageView.swift in Sources */,
+				BF9D6D211D2C9C950007A3E2 /* DLILCacheManager.swift in Sources */,
 				BFD0C74C1D2077930031339E /* Book.swift in Sources */,
 				BFCD93AF1D150C370044E496 /* AppDelegate.swift in Sources */,
 				BFCD93B71D150C370044E496 /* Swifty_Librarian.xcdatamodeld in Sources */,
