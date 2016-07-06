@@ -33,12 +33,24 @@ class LoanCheckOutHandler: RequestHandler {
 		
 		defer { mysql.close() }
 		
+		mysql.query("SELECT * FROM fine A, book_loans B	WHERE A.loan_id = B.loan_id AND A.paid = 0 AND B.card_id = '\(paramCardId)';")
+		guard mysql.storeResults()?.numRows() < 3 {
+			let responseDictionary: [String: Any] = ["status": false]
+			let responseString = try! responseDictionary.jsonEncodedString()
+			response.appendBodyString(responseString)
+			response.requestCompletedCallback()
+			return
+		}
+		
 		let now = NSDate()
 		let due = now.dateByAddingTimeInterval(60*60*24*14)
 		
 		mysql.query("INSERT INTO book_loans (book_id, card_id, date_out, date_due) VALUES (\(paramBookId), '\(paramCardId)', '\(now.toString())', '\(due.toString())');")
 		mysql.query("UPDATE book_copies SET availability=0 WHERE book_id = \(paramBookId);")
 		
+		let responseDictionary: [String: Any] = ["status": true]
+		let responseString = try! responseDictionary.jsonEncodedString()
+		response.appendBodyString(responseString)
 		response.requestCompletedCallback()
 		
 	}

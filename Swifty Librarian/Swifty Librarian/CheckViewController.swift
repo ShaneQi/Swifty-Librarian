@@ -43,9 +43,31 @@ extension CheckViewController: UITableViewDataSource {
 		switch (indexPath.section, indexPath.row) {
 		case (0, 0):
 			let cell = tableView.dequeueReusableCellWithIdentifier("TextFieldCell") as! TextFieldCell
+			if tableView == inTableView {
+				cell.textField.rx_text.subscribeNext({
+					nextString in
+					self.viewModel.checkinBookId.value = nextString
+				}).addDisposableTo(viewModel.disposeBag)
+			} else {
+				cell.textField.rx_text.subscribeNext({
+					nextString in
+					self.viewModel.checkoutBookId.value = nextString
+				}).addDisposableTo(viewModel.disposeBag)
+			}
 			return cell
 		case (0, 1):
 			let cell = tableView.dequeueReusableCellWithIdentifier("TextFieldCell") as! TextFieldCell
+			if tableView == inTableView {
+				cell.textField.rx_text.subscribeNext({
+					nextString in
+					self.viewModel.checkinCardId.value = nextString
+				}).addDisposableTo(viewModel.disposeBag)
+			} else {
+				cell.textField.rx_text.subscribeNext({
+					nextString in
+					self.viewModel.checkoutCardId.value = nextString
+				}).addDisposableTo(viewModel.disposeBag)
+			}
 			return cell
 		case (0, 2):
 			let cell = tableView.dequeueReusableCellWithIdentifier("LabelCell") as! LabelCell
@@ -78,6 +100,34 @@ extension CheckViewController: UITableViewDataSource {
 			return cell
 		case (1, 0):
 			let cell = tableView.dequeueReusableCellWithIdentifier("ButtonCell") as! ButtonCell
+			if tableView == inTableView {
+				cell.button.rx_tap.subscribeNext({
+					self.viewModel.performCheckin({
+						_ in
+						let alert = UIAlertController(title: "SUCCESS", message: "", preferredStyle: .Alert)
+						alert.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
+						self.presentViewController(alert, animated: true, completion: nil)
+						self.viewModel.clear()
+					})
+					
+				}).addDisposableTo(viewModel.disposeBag)
+			} else {
+				cell.button.rx_tap.subscribeNext({
+					self.viewModel.performCheckout({
+						status in
+						if status {
+							let alert = UIAlertController(title: "SUCCESS", message: "", preferredStyle: .Alert)
+							alert.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
+							self.presentViewController(alert, animated: true, completion: nil)
+						} else {
+							let alert = UIAlertController(title: "FAILURE", message: "You already got 3 active loans.", preferredStyle: .Alert)
+							alert.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
+							self.presentViewController(alert, animated: true, completion: nil)
+						}
+						self.viewModel.clear()
+					})
+				}).addDisposableTo(viewModel.disposeBag)
+			}
 			return cell
 		default:
 			let cell = tableView.dequeueReusableCellWithIdentifier("LabelCell") as! LabelCell

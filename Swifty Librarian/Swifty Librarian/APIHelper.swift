@@ -16,3 +16,9 @@ let bookSearchMETHOD = Method.GET
 
 let bookAvailabilityURL = "http://localhost:8181/book/availability"
 let bookAvailabilityMETHOD = Method.GET
+
+let loanCheckinURL = "http://localhost:8181/loan/checkin"
+let loanCheckinMETHOD = Method.GET
+
+let loanCheckoutURL = "http://localhost:8181/loan/checkout"
+let loanCheckoutMETHOD = Method.GET
