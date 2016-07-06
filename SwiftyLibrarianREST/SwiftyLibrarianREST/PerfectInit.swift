@@ -12,7 +12,8 @@ public func PerfectServerModuleInit() {
 	
 	Routing.Handler.registerGlobally()
 	
-	// register a route for gettings posts
+	Routing.Routes["GET", "/branch/list"] = { _ in return BranchListHandler.instance }
+	
 	Routing.Routes["GET", "/book/search"] = { _ in return BookSearchHandler.instance }
 	Routing.Routes["GET", "/book/availability"] = { _ in return BookAvailabilityHandler.instance }
 	
