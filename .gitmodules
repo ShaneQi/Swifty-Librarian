@@ -1,3 +1,6 @@
 [submodule "Perfect"]
 	path = Perfect
 	url = https://ShaneQi@github.com/PerfectlySoft/Perfect.git
+[submodule "RxSwift"]
+	path = RxSwift
+	url = https://github.com/ReactiveX/RxSwift.git

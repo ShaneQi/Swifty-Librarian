@@ -68,7 +68,7 @@ if !createLibraryBranchTable {
 	
 }
 
-let createBookCopiesTable = mysql.query("CREATE TABLE IF NOT EXISTS book_copies (book_id INT(10) AUTO_INCREMENT PRIMARY KEY, isbn varchar(255), branch_id INT(10));")
+let createBookCopiesTable = mysql.query("CREATE TABLE IF NOT EXISTS book_copies (book_id INT(10) AUTO_INCREMENT PRIMARY KEY, isbn varchar(255), branch_id INT(10), availability TINYINT(1) DEFAULT 1);")
 
 if !createBookCopiesTable {
 	
@@ -76,7 +76,7 @@ if !createBookCopiesTable {
 	
 }
 
-let createBorrowerTable = mysql.query("CREATE TABLE IF NOT EXISTS borrower (card_id varchar(255) PRIMARY KEY, ssn varchar(255), first_name varchar(255), last_name varchar(255), email varchar(255), address varchar(255), city varchar(255), state varchar(255), phone varchar(255));")
+let createBorrowerTable = mysql.query("CREATE TABLE IF NOT EXISTS borrower (card_id varchar(255) PRIMARY KEY, ssn varchar(255) UNIQUE, first_name varchar(255), last_name varchar(255), email varchar(255), address varchar(255), city varchar(255), state varchar(255), phone varchar(255));")
 
 if !createBorrowerTable {
 	
@@ -84,7 +84,7 @@ if !createBorrowerTable {
 	
 }
 
-let createBookLoansTable = mysql.query("CREATE TABLE IF NOT EXISTS book_loans (loan_id INT(10) PRIMARY KEY, book_id INT(10), card_id INT(10), date_out DATE, date_due DATE, date_in DATE);")
+let createBookLoansTable = mysql.query("CREATE TABLE IF NOT EXISTS book_loans (loan_id INT(10) PRIMARY KEY AUTO_INCREMENT, book_id INT(10), card_id varchar(255), date_out DATE, date_due DATE, date_in DATE);")
 
 if !createBookLoansTable {
 	
@@ -92,7 +92,7 @@ if !createBookLoansTable {
 	
 }
 
-let createFineTable = mysql.query("CREATE TABLE IF NOT EXISTS fine (loan_id INT(10) PRIMARY KEY, fine_amount FLOAT(10, 2), paid BOOL);")
+let createFineTable = mysql.query("CREATE TABLE IF NOT EXISTS fine (fine_id INT(10) AUTO_INCREMENT PRIMARY KEY, loan_id INT(10), fine_amount FLOAT(10, 2), paid BOOL);")
 
 if !createFineTable {
 	
