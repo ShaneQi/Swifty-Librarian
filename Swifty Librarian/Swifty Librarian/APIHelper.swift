@@ -8,7 +8,7 @@
 
 import Alamofire
 
-let baseURL = "http://192.168.1.102:8181"
+let baseURL = "http://localhost:8181"
 
 let branchListURL = baseURL + "/branch/list"
 let branchListMETHOD = Method.GET
